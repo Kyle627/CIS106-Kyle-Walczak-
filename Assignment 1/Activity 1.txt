@@ -1,34 +1,56 @@
 ... This program will help you make a meatball sandwich
-1.) Collect required ingredients and tools:
--Pre-sliced Italian roll
--Cooked meatballs
--Pepperoni
--Italian Seasoning 
--Ladle 
--Plate
--Air fryer
--Measuring cup
--Pepperjack cheese 
-2.) Grab the Italian roll and open 180 degrees. 
-3.) Set bread on plate.
-4.) Grab ladle.
-5.) Using ladle, scoop one meatball out of pot or container and place on the left side of Italian roll. 
-6.) Using ladle, scoop one meatball out of pot or container and place one inch from the left end of Italian roll. 
-7.) Using ladle, scoop one meatball out of pot or container and place two inchs from the left end of Italian roll. 
-8.) Using ladle, scoop one meatball out of pot or container and place three inchs from the left end of Italian roll. 
-9.) Using ladle, scoop one meatball out of pot or container and place four inchs from the left end of Italian roll. 
-10.) Using ladle, scoop one meatball out of pot or container and place five inchs from the left end of Italian roll. 
-11.) Set ladle down.
-12.) Grab six pepperonis and place on top of meatballs.
-13.) Grab mesuring cup.
-14.) Add cheese to measuring cup until quarter cup line in met. 
-13.) Grab quarter cup shredded cheese.
-14.) Spread evenly across sandwich. 
-15.) Open Air fyrer.
-16.) Place sandwich in air fryer.
-17.) Close air fryer and set to two minutes 400 degrees.
-18.) After air fryer is complete, open air fryer.
-19.) Remove sandwich and place on plate. 
-20.) Close air fyrer.
-21.) Close bread ninety degrees and enjoy.
+Collect required ingredients and tools:
+  -Pre-sliced Italian roll
+  -Cooked meatballs
+  -Pepperoni
+  -Italian Seasoning 
+  -Ladle 
+  -Plate
+  -Air fryer
+  -Measuring cup
+  -tablespoon measuring spoon. 
+  -Pepperjack cheese 
+  -Sauce
+  -Pot
+  -Stove
+ ## Prepare meatballs
+Open meatball package.
+Place 6 meatballs into pot.
+Close meatball package.
+Open sauce bottle. 
+Pour sauce into measuring cup until 1 cup line is met. 
+Pour 1 cup of sauce into pot.
+Close sauce bottle.
+Apply low flame to pot for 15 minutes. 
+Remove heat from pot. 
+Grab the Italian roll and open 180 degrees. 
+Set bread on plate.
+Grab ladle.
+Using ladle, scoop one meatball out of pot and place on the left side of Italian roll. 
+Using ladle, scoop one meatball out of pot and place one inch from the left end of Italian roll. 
+Using ladle, scoop one meatball out of pot and place two inchs from the left end of Italian roll. 
+Using ladle, scoop one meatball out of pot and place three inchs from the left end of Italian roll. 
+Using ladle, scoop one meatball out of pot and place four inchs from the left end of Italian roll. 
+Using ladle, scoop one meatball out of pot and place five inchs from the left end of Italian roll. 
+Set ladle down.
+Open pepperoni package. 
+Grab six pepperonis and place on top of meatballs.
+Close pepperoni package. 
+Grab measuring cup.
+Open cheese container. 
+Add cheese to measuring cup until quarter cup line in met. 
+Grab quarter cup shredded cheese.
+Spread evenly across sandwich. 
+Close cheese package.
+Open Air fry er.
+Place sandwich in air fryer.
+Close air fryer and set to two minutes 400 degrees.
+After air fryer is complete, open air fryer.
+Remove sandwich and place on plate. 
+Open italian seasoning container. 
+Measure 1 tbsp of seasoning.
+Spread seasoning evenly accross sandwich. 
+Close seasoning container. 
+Close air fyrer
+Close bread ninety degrees and enjoy.
   
