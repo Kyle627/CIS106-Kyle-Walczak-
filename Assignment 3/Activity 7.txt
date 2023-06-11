@@ -1,1 +1,13 @@
 This program takes inputted dog age in human years and converts it to dog years.
+
+Input
+  Display prompt, "what is your dogs name?"
+  Get Dogs Name 
+  Display prompt, "how old is your dog?"
+  Get Dogs Age
+ 
+Process
+  Multiply dogs age by 7
+  
+Output
+  Dogs name & new converted age. 
