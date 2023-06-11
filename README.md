@@ -8,3 +8,7 @@ I am taking this class because it is one of the building blocks for my degree. I
 
 My first week of programming went fairly smoothly. I got a piece of the tedious nature that programming requires. I learned about program design and the planning steps required for
 programming. I think working with flow charts will be an interesting piece to the class. I’ve worked with schematics for the last seven years so I relate flow charts to schematics however; for computer programs rather than electronics. Messing around with source code language from my flow chart showed me how the syntax changes between languages without changing the output. I learned what an Integrated Development Environment (IDE) is and how to use one. The IDE I used was recommended, GDB online debugger. I plan to continue to use this IDE.
+
+## Assignment 3
+
+This assignment taught me how to use data from the program user. I was having trouble with combing the converted age with a string but have since learned how to concatenate items together. The next issue that occurred was my output spacing. The spacing on my output msg was not correct, I had to manually add spaces inside the quotation marks. I learned how to use basic arithmetic within my program to convert a dog’s age from human years to puppy years. I used the Pascal case to label my variables as I find this easier to read than the Camel case. I intend to use these tools throughout this class and further into my programming career.
