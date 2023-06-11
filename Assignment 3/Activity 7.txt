@@ -1,0 +1,1 @@
+This program takes inputted dog age in human years and converts it to dog years.
