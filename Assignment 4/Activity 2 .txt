@@ -1,7 +1,7 @@
 This program takes inputted age in years and convert to months, days, hours, minutes, and seconds. 
 
 Input
-  "What is your age in years? (.25 = X and 3 months old, .50 = X and 6 months old, .75 = x and 9 months old) (Years)
+  "What is your age in years?" (.25 = X and 3 months old, .50 = X and 6 months old, .75 = x and 9 months old) (Years)
   
 Processing 
   Convert years to months x12
