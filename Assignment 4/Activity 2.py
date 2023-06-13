@@ -5,16 +5,16 @@
 # https://harpercollege.pressbooks.pub/programmingfundamentals/chapter/python-examples-2/
 
 print("What is your name?")
-NameOne = str(input())
+name_one = str(input())
 
 print("What is your age in years? (X.25 = X and 3 months old, .50 = X and 6 months old, .75 = x and 9 months old)")
-AgeYears = float(input()) 
-AgeMonths = int(AgeYears * 12)
-AgeDays = int(AgeYears * 365.25)
-AgeHours = int(AgeDays * 24)
-AgeMin = int(AgeHours * 60)
-AgeSec = int(AgeMin * 60 ) 
+age_years = float(input()) 
+age_months = int(AgeYears * 12)
+age_days = int(AgeYears * 365.25)
+age_hours = int(AgeDays * 24)
+age_min = int(AgeHours * 60)
+age_sec = int(AgeMin * 60 ) 
 
-print(str(NameOne) + ", being " + str(AgeYears) + " years old you are: " + str(AgeMonths) + " months old, " + str(AgeDays) + " days old, " + str(AgeMin) + " Minutes old, and " + str(AgeSec) + " seconds old. PHEW!")
+print(str(name_one) + ", being " + str(age_years) + " years old you are: " + str(age_months) + " months old, " + str(age_days) + " days old, " + str(age_min) + " Minutes old, and " + str(age_sec) + " seconds old. PHEW!")
 
 
