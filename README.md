@@ -12,3 +12,7 @@ programming. I think working with flow charts will be an interesting piece to th
 ## Assignment 3
 
 This assignment taught me how to use data from the program user. I was having trouble with combing the converted age with a string but have since learned how to concatenate items together. The next issue that occurred was my output spacing. The spacing on my output msg was not correct, I had to manually add spaces inside the quotation marks. I learned how to use basic arithmetic within my program to convert a dog’s age from human years to puppy years. I used the Pascal case to label my variables as I find this easier to read than the Camel case. I intend to use these tools throughout this class and further into my programming career.
+
+## Assignment 4
+
+During this session, I got my first taste of programming with Python without using flow charts to generate the code for me. This unit has been interesting and very interactive. I am looking forward to coding more with Python. I experimented with floats instead of integer data types and came across some issues. Initially, I wanted a float for the initial input to allow more flexibility. I changed all data types to float and received excessive numbers beyond the decimal point. Bringing all the conversions to integers while leaving the input as a float worked the best. I plan to use this knowledge throughout this course and eventually to help secure a job for my future career. 
