@@ -11,6 +11,6 @@ Processing
   Convert minutes to seconds x60 
   
 Output
-  "Being x days old you are: x months old, x days old, x hours old, x minutes old, and x seconds old. PHEW!"
+  "Being x years old you are: x months old, x days old, x hours old, x minutes old, and x seconds old. PHEW!"
    
    
