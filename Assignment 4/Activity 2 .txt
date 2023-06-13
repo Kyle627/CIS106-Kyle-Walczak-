@@ -1,1 +1,16 @@
-IPO
+This program takes inputted age in years and convert to months, days, hours, minutes, and seconds. 
+
+Input
+  Years
+  
+Processing 
+  Convert years to months x12
+  Convert years to days x365.25
+  Convert days to hours x24
+  Convert hours to minutes x60
+  Convert minutes to seconds x60 
+  
+Output
+  "Being x days old you are: x months old, x days old, x hours old, x minutes old, and x seconds old. PHEW!"
+   
+   
