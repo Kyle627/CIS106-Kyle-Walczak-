@@ -20,4 +20,4 @@ age_min = int(age_hours * 60)
 age_sec = int(age_min * 60) 
 
 print(str(name_one) + ", being " + str(age_years) + " years old you are: " + str(age_months) + " months old, " +
-       str(age_days) + " days old, " + str(age_min) + " Minutes old, and " + str(age_sec) + " seconds old. PHEW!")
+       str(age_days) + " days old, " + str(age_hours) + " hours old, " + str(age_min) + " Minutes old, and " + str(age_sec) + " seconds old. PHEW!")
