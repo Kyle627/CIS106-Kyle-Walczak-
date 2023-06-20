@@ -1,0 +1,43 @@
+This program takes inputted dog age and name and outputs the converted age with a prompt. 
+
+Main Program
+  Get Name
+  Get Age
+  Calculate converted age
+  Display result
+
+Get Name
+	Parameters:
+		None
+	Process:
+		Display prompt 
+		Get Name 
+	Return: 
+		None
+    
+Get Age
+	Parameters: 
+		None
+	Process: 
+		Display prompt
+		Get Age
+	Return: 
+		None
+    
+Calculate converted age
+	Parameters:
+		Age
+	Process:
+		Convert age to human years (x7)
+	Return: 
+		Human years
+    
+Display result
+	Parameters:
+		Dog name
+		Dog age
+		Converted Dog age
+	Process: 
+		Display dog name and converted dog age in the prompt
+	Return:
+		None
