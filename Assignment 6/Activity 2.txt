@@ -1,1 +1,65 @@
+This program takes inputted age in years and converts it to months, days, hours, minutes, and seconds.
+
+
+Main	
+	Get age (years)
+	Calculate Months
+	Calculate Days
+	Calculate Hours
+	Calculate Seconds
+	Display Result
+
+Get Age
+	Parameters:
+		None
+	Process:
+		Display prompt
+		Get Age
+	Return:
+		Age (years)
+
+Calculate Months
+	Parameters:
+		Age
+	Process:
+		Multiply by 12
+	Return:
+		Months
+    
+Calculate Days
+	Parameters:
+		Age
+	Process:
+		Multiply by 365.25
+	Return:
+		Days
+    
+Calculate Hours
+	Parameters:
+		Days
+	Process:
+		Multiply by 24
+	Return:
+		Hours
+    
+Calculate Seconds
+	Parameters:
+		Hours
+	Process:
+		Multiply by 3600
+	Return:
+		Seconds
+    
+Display Result
+	Parameters:
+		Age, Months, Days, Hours and Seconds
+	Process:
+		Display
+	Return:
+		None
+
+
+
+
+
 
