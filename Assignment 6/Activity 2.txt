@@ -1,4 +1,4 @@
-This program takes inputted age in years and converts it to months, days, hours, minutes, and seconds.
+This program takes inputted age in years and converts it to months, days, hours, and seconds.
 
 
 Main	
