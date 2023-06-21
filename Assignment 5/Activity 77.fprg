@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="kylew"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-06-21 12:04:06 AM"/>
+        <attribute name="created" value="a3lsZXc7REVTS1RPUC1QQkNTTENUOzIwMjMtMDYtMjA7MTE6NDk6NTcgUE07Mjk0OA=="/>
+        <attribute name="edited" value="a3lsZXc7REVTS1RPUC1QQkNTTENUOzIwMjMtMDYtMjE7MTI6MDQ6MDYgQU07MTszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program takes inputted dog age and name and outputs the converted age with a prompt. "/>
+            <declare name="DogsName" type="String" array="False" size=""/>
+            <declare name="DogsAge" type="Integer" array="False" size=""/>
+            <declare name="DogsRealAge" type="Integer" array="False" size=""/>
+            <assign variable="DogsName" expression="GetName()"/>
+            <assign variable="DogsAge" expression="GetAge()"/>
+            <assign variable="DogsRealAge" expression="GetRealAge()"/>
+            <call expression="DisplayResults&#13;&#10;"/>
+        </body>
+    </function>
+    <function name="DisplayResult" type="String" variable="">
+        <parameters/>
+        <body>
+            <declare name="DogsName" type="String" array="False" size=""/>
+            <declare name="DogsAge" type="Integer" array="False" size=""/>
+            <declare name="DogsRealAge" type="Integer" array="False" size=""/>
+            <output expression="DogsName &amp; &quot; being &quot; &amp; DogsAge &amp; &quot; is &quot; &amp; DogsRealAge &amp; &quot;in human years.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="GetAge" type="Integer" variable="DogsAge">
+        <parameters/>
+        <body>
+            <declare name="DogsAge" type="Integer" array="False" size=""/>
+            <output expression="&quot;What is your dogs age?&quot;" newline="True"/>
+            <input variable="DogsAge"/>
+        </body>
+    </function>
+    <function name="GetName" type="String" variable="DogsName">
+        <parameters/>
+        <body>
+            <declare name="DogsName" type="String" array="False" size=""/>
+            <output expression="&quot;What is your dogs name?&quot;" newline="True"/>
+            <input variable="DogsName"/>
+        </body>
+    </function>
+    <function name="GetRealAge" type="Integer" variable="RealAge">
+        <parameters/>
+        <body>
+            <declare name="RealAge" type="Integer" array="False" size=""/>
+            <declare name="DogsAge" type="Integer" array="False" size=""/>
+            <assign variable="RealAge" expression="DogsAge *7"/>
+        </body>
+    </function>
+</flowgorithm>
