@@ -16,3 +16,7 @@ This assignment taught me how to use data from the program user. I was having tr
 ## Assignment 4
 
 During this session, I got my first taste of programming with Python without using flow charts to generate the code for me. This unit has been interesting and very interactive. I am looking forward to coding more with Python. I experimented with floats instead of integer data types and came across some issues. Initially, I wanted a float for the initial input to allow more flexibility. I changed all data types to float and received excessive numbers beyond the decimal point. Bringing all the conversions to integers while leaving the input as a float worked the best. I plan to use this knowledge throughout this course and eventually to help secure a job for my future career. 
+
+## Assignment 5
+
+During this session, I had a lot of trouble with functions. My return values were not saving into my main function. I have yet to turn in a flow chart or source code because of this. I will continue to try before submitting it. I hope that with all this trouble, the knowledge that I gain will stick with me and I don't make these mistakes in the future. I am looking forward to using standard libraries and discovering what all they contain. Moving forward I would like to use these new tools throughout the rest of this course and further into my programming career. 
