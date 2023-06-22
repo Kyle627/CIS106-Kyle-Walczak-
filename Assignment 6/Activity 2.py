@@ -17,7 +17,7 @@ def cal_months(age_years):
 	return months
 
 def cal_days(age_years):
-	days = age_years * 365.25
+	days = age_years * 365
 	return days
 
 def cal_hours(age_years):
