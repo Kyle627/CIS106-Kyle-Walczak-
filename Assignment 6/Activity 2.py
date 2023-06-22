@@ -48,4 +48,4 @@ def main():
     display_result(years, months, days, hours, seconds)
 
 
-main()
+main() 
