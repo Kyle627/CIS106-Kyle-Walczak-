@@ -25,4 +25,4 @@ def getRealAge():
 dogsName = getName()
 dogsAge = getAge()
 dogsRealAge = getRealAge()
-DisplayResults()
+displayResults()
