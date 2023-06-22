@@ -1,4 +1,4 @@
-# This program converts inputted age into months,
+# This program converts input age into months,
 # days, hours, and seconds 
 #
 # References:
@@ -50,4 +50,4 @@ def main():
 
 
 main()
-exit()
+quit()
