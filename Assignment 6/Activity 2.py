@@ -24,8 +24,8 @@ def cal_hours(age_years):
 	hours = (age_years * 365) * 24
 	return hours
 
-def cal_seconds(days):
-	seconds = days * 3600 
+def cal_seconds(hours):
+	seconds = hours * 3600 
 	return seconds
 
 def display_result(age_years, months, days, hours, seconds):
