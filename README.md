@@ -20,3 +20,7 @@ During this session, I got my first taste of programming with Python without usi
 ## Assignment 5
 
 During this session, I had a lot of trouble with functions. My return values were not saving into my main function. I have yet to turn in a flow chart or source code because of this. I will continue to try before submitting it. I hope that with all this trouble, the knowledge that I gain will stick with me and I don't make these mistakes in the future. I am looking forward to using standard libraries and discovering what all they contain. Moving forward I would like to use these new tools throughout the rest of this course and further into my programming career. 
+
+## Assignment 6
+
+During this assignment I learned about the importance of passing parameters through my processing and output functions. I also experienced trouble with concatenating strings and integers. It was interesting using the same activity, as you can see the difference from assignment to assignment. Using functions seems to make your main program extremely simple to read. One thing that would improve my programs is knowing how to change precision. I would prefer some variables without decimals, but python adds them regardless. I am excited to learn about standard libraries and use already made functions in my programs. I plan to use these tools throughout this programming course and hopefully further into my programming career.  
