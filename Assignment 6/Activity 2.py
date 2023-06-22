@@ -8,7 +8,7 @@
 # programmingfundamentals/chapter/python-examples-3/
 
 def get_age():
-    print ("Enter your age:") 
+    print("Enter your age:") 
     years = int(input())
     return years
 
@@ -29,14 +29,14 @@ def cal_hours(years):
 
 
 def cal_seconds(hours):
-   seconds = hours * 3600
-   return seconds
+    seconds = hours * 3600
+    return seconds
 
 
 def display_result(years, months, days, hours, seconds):
     print(" Being " + str(years) + " years old you are, " + str(months) +
-    " months old, " + str(days) + " days old, " + str(hours) + " hours old, and "
-    + str(seconds) + " seconds old. PHEW!") 
+    " months old, " + str(days) + " days old, " + str(hours) +
+    " hours old, and " + str(seconds) + " seconds old. PHEW!") 
 
 
 def main(): 
