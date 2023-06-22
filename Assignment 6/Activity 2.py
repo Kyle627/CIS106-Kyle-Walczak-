@@ -9,22 +9,22 @@
 
 def get_age():
     print ("Enter your age:") 
-    age_years = int(input())
-    return age_years
+    years = int(input())
+    return years
 
 
-def cal_months(age_years):
-    months = age_years * 12 
+def cal_months(years):
+    months = years * 12 
     return months
 
 
-def cal_days(age_years):
-    days = age_years * 365
+def cal_days(years):
+    days = years * 365
     return days
 
 
-def cal_hours(age_years):
-    hours = age_years * 24
+def cal_hours(years):
+    hours = years * 24
     return hours
 
 
@@ -33,19 +33,19 @@ def cal_seconds(hours):
    return seconds
 
 
-def display_result(age_years, months, days, hours, seconds):
-    print(" Being " + str(age_years) + " years old you are, " + str(months) +
-    " months old, " + str(days) + " days old, " + str(hours) + " hours old, 
-    and " + str(seconds) + " seconds old. PHEW!") 
+def display_result(years, months, days, hours, seconds):
+    print(" Being " + str(years) + " years old you are, " + str(months) +
+    " months old, " + str(days) + " days old, " + str(hours) + " hours old, and "
+    + str(seconds) + " seconds old. PHEW!") 
 
 
 def main(): 
-    age = get_age()
-    months = cal_months(age)
-    days = cal_days(age)
+    years = get_age()
+    months = cal_months(years)
+    days = cal_days(years)
     hours = cal_hours(days)
     seconds = cal_seconds(hours)
-    display_result(age, months, days, hours, seconds)
+    display_result(years, months, days, hours, seconds)
 
 
 main()
