@@ -6,6 +6,7 @@
 # programmingfundamentals/chapter/python-examples-2/
 # https://harpercollege.pressbooks.pub/
 # programmingfundamentals/chapter/python-examples-3/
+# https://www.scaler.com/topics/exit-in-python/
 
 def get_age():
     print("Enter your age:") 
@@ -48,4 +49,5 @@ def main():
     display_result(years, months, days, hours, seconds)
 
 
-main() 
+main()
+exit()
