@@ -1,7 +1,10 @@
-def displayResult():
-    print(dogsName + " being " + str(dogsAge) + " is " + str(dogsRealAge) + "in human years.")
+def calRealAge(dogsAge):
+    realAge = dogsAge * 7
     
-    return 
+    return realAge
+
+def displayResult(dogsName, dogsAge, dogsRealAge):
+    print(dogsName + " being " + str(dogsAge) + " is " + str(dogsRealAge) + " in human years.")
 
 def getAge():
     print("What is your dogs age?")
@@ -15,14 +18,9 @@ def getName():
     
     return dogsName
 
-def getRealAge():
-    realAge = dogsAge * 7
-    
-    return realAge
-
 # Main
 # This program takes inputted dog age and name and outputs the converted age with a prompt.
 dogsName = getName()
 dogsAge = getAge()
-dogsRealAge = getRealAge()
-displayResults()
+dogsRealAge = calRealAge(dogsAge)
+displayResult(dogsName, dogsAge, dogsRealAge)
