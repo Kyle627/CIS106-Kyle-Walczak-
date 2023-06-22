@@ -1,5 +1,5 @@
 # This program converts inputted age into months,
-# days, hours, minutes and seconds 
+# days, hours, and seconds 
 #
 # References:
 # https://harpercollege.pressbooks.pub/
