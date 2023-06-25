@@ -1,4 +1,4 @@
-# This program converts input age into months,
+# This program converts input age into months, 
 # days, hours, and seconds
 #
 # References:
