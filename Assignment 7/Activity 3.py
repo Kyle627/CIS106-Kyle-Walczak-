@@ -25,7 +25,7 @@ def calculate_standard(miles):
     inches = feet * 12 
     miles_converted = ( 
         f"{miles} miles is, {yards} yards long, "
-        f"{feet} feet long, {inches} inches long." )
+        f"{feet} feet long, {inches} inches long.")
     return miles_converted
 
 
@@ -35,7 +35,7 @@ def calculate_metric(miles):
     centimeters = meters * 100
     miles_converted = (
         f"{miles} miles is, {kilometers} KM long, "
-        f"{meters} meters long, {centimeters} CM long." )
+        f"{meters} meters long, {centimeters} CM long.")
     return miles_converted
 
 
@@ -48,10 +48,10 @@ def main():
     choice = get_choice() 
     if choice == "S" or choice == "s":
         result = calculate_standard(miles)
-        display_result (result)
+        display_result(result)
     elif choice == "M" or choice == "m":
         result = calculate_metric(miles)
-        display_result (result)
+        display_result(result)
     else: 
         print("You must enter S or M to convert the distance")
 
