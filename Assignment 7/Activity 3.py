@@ -13,8 +13,8 @@ def get_distance():
 
 
 def get_choice(): 
-    print("Would you like to convert to Standard [S] or
-    Metric [M]? [Enter S or M]")
+    print("Would you like to convert to Standard [S]
+    or Metric [M]? [Enter S or M]")
     choice = input()
     return choice
 
