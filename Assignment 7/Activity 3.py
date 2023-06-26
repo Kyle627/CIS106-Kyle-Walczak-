@@ -13,8 +13,8 @@ def get_distance():
 
 
 def get_choice(): 
-    print("Would you like to convert to Standard [S]"
-          " or Metric [M]? [Enter S or M]")
+    print("Would you like to convert to Standard [US]"
+          " or Metric [METRIC]? [Enter US or METRIC]")
     choice = input()
     return choice
 
@@ -68,18 +68,18 @@ def display_mresult(miles, kilometers, meters, centimeters):
 def main(): 
     miles = get_distance()
     choice = get_choice()
-    if choice == "S" or choice == "s":
+    if choice == "US" or choice == "us":
         yards = calculate_yards(miles)
         feet = calculate_feet(miles)
         inches = calculate_inches(feet)
         display_sresult(miles, yards, feet, inches)
-    elif choice == "M" or choice == "m":
+    elif choice == "METRIC" or choice == "metric":
         kilometers = calculate_kilometers(miles)
         meters = calculate_meters(kilometers)
         centimeters = calculate_centimeters(meters)
         display_mresult(miles, kilometers, meters, centimeters)
     else: 
-        print("You must enter S or M to convert the distance")
+        print("You must enter 'US' or 'METRIC' to convert the distance")
 
 
 main()
