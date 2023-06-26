@@ -13,8 +13,8 @@ def get_distance():
 
 
 def get_choice(): 
-    print("Would you like to convert to
-    Standard [S] or Metric [M]? [Enter S or M]")
+    print("Would you like to convert to Standard [S]"
+          " or Metric [M]? [Enter S or M]")
     choice = input()
     return choice
 
@@ -23,8 +23,9 @@ def calculate_standard(miles):
     yards = miles * 1760
     feet = miles * 5280
     inches = feet * 12 
-    miles_converted = f"{miles} miles is, {yards} yards long, {feet} 
-    feet long, {inches} inches long." 
+    miles_converted = ( 
+        f"{miles} miles is, {yards} yards long, "
+        f"{feet} feet long, {inches} inches long." )
     return miles_converted
 
 
@@ -32,8 +33,9 @@ def calculate_metric(miles):
     kilometers = miles * 1.609344
     meters = kilometers * 1000
     centimeters = meters * 100
-    miles_converted = f"{miles} miles is, {kilometers} KM long, {meters} 
-    meters long, {centimeters} CM long."
+    miles_converted = (
+        f"{miles} miles is, {kilometers} KM long, "
+        f"{meters} meters long, {centimeters} CM long." )
     return miles_converted
 
 
