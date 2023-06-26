@@ -3,6 +3,7 @@
 # References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals/
 # chapter/python-examples-4/
+# https://www.mathsisfun.com/measure/us-standard-length.html
 
 def get_distance():
     print("Enter distance in miles:")
