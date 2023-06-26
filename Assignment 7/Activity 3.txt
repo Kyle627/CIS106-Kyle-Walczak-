@@ -9,6 +9,7 @@ Main
     Or:
         Calculate Metric 
         Display Results 
+
 Get Distance
     Parameters:
         None.
@@ -17,6 +18,7 @@ Get Distance
         Get Miles
     Return:
         Distance (Miles) 
+
 Get Choice
     Parameters:
         None
@@ -32,6 +34,7 @@ Calculate Standard
         Convert Miles to Yards ( x 1760), feet ( x 5280) and inches ( feet *12 )
     Return:
         Standard Conversion
+
 Calculate Metric
     Parameters:
         Miles
@@ -39,6 +42,7 @@ Calculate Metric
         Convert Miles to Kilometers ( x 1.609344), Meters ( KM * 1000 ) and Centimeters (Meters * 100) 
     Return:
         Metric Conversion
+
 Display Result: 
     Parameters:
         Distance
