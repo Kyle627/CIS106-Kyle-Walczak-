@@ -19,41 +19,58 @@ def get_choice():
     return choice
 
 
-def calculate_standard(miles):
+def calculate_yards(miles):
     yards = miles * 1760
+    return yards
+
+
+def calculate_feet(miles):
     feet = miles * 5280
-    inches = feet * 12 
-    miles_converted = ( 
-        f"{miles} miles is, {yards} yards long, "
-        f"{feet} feet long, {inches} inches long.")
-    return miles_converted
+    return feet
 
 
-def calculate_metric(miles):
+def calculate_inches(feet):
+    inches = feet * 12
+    return inches
+
+
+def calculate_kilometers(miles):
     kilometers = miles * 1.609344
+    return kilometers
+
+
+def calculate_meters(kilometers):
     meters = kilometers * 1000
+    return meters
+
+
+def calculate_centimeters(meters):
     centimeters = meters * 100
-    miles_converted = (
-        f"{miles} miles is, {kilometers} KM long, "
-        f"{meters} meters long, {centimeters} CM long.")
-    return miles_converted
+    return centimeters
 
 
-def display_result(miles_converted):
-    print(miles_converted) 
+def display_sresult(miles, yards, feet, inches):
+    print (f"{miles} miles is, {yards} yards, {feet} feet and, {inches} inches long.")
 
 
-def main():
+def display_mresult(miles, kilometers, meters, centimeters):
+    print (f"{miles} miles is, {kilometers} kilometers, {meters} meters and, {centimeters} centimeters long.")
+
+
+def main(): 
     miles = get_distance()
-    choice = get_choice() 
+    choice = get_choice()
     if choice == "S" or choice == "s":
-        result = calculate_standard(miles)
-        display_result(result)
+        yards = calculate_yards(miles)
+        feet = calculate_feet(miles)
+        inches = calculate_inches(feet)
+        display_sresult(miles, yards, feet, inches)
     elif choice == "M" or choice == "m":
-        result = calculate_metric(miles)
-        display_result(result)
+        kilometers = calculate_kilometers(miles)
+        meters = calculate_meters(kilometers)
+        centimeters = calculate_centimeters(meters)
+        display_mresult(miles, kilometers, meters, centimeters)
     else: 
         print("You must enter S or M to convert the distance")
-
 
 main()
