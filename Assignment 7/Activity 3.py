@@ -50,12 +50,18 @@ def calculate_centimeters(meters):
 
 
 def display_sresult(miles, yards, feet, inches):
-    print (f"{miles} miles is, {yards} yards, {feet} feet and, {inches} inches long.")
-
+    print(
+        f"{miles} miles is, {yards} yards,"
+        f"{feet} feet and, {inches} inches long."
+    )
+    return 
 
 def display_mresult(miles, kilometers, meters, centimeters):
-    print (f"{miles} miles is, {kilometers} kilometers, {meters} meters and, {centimeters} centimeters long.")
-
+    print(
+        f"{miles} miles is, {kilometers} kilometers," 
+        f"{meters} meters and, {centimeters} centimeters long."
+    )
+    return  
 
 def main(): 
     miles = get_distance()
@@ -72,5 +78,6 @@ def main():
         display_mresult(miles, kilometers, meters, centimeters)
     else: 
         print("You must enter S or M to convert the distance")
+
 
 main()
