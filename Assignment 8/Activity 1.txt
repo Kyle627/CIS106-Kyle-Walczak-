@@ -1,0 +1,27 @@
+## This program takes iteration input from user and outputs a multiplication table with x(input) number of expressions 
+
+Main Program
+  Get iteration value
+  Demonstrate for loop
+
+Get iteration:
+	Parameters:
+	    None
+	Process: 
+	    Display prompt
+	    Get iteration
+	Return Value:
+	    Iteration
+
+Demonstrate for loops
+	Parameters:
+	    Start (zero)
+	    Stop (input)
+	    Increment 
+	Process: 
+	    Initialize count (0)
+	    Loop for count from start to stop
+	    Output line
+	    Display count
+	Return Value: 
+	     None 
