@@ -26,7 +26,7 @@ def demonstrate_for_loop(iterations, value):
 
 
 def display_result(value, x):
-    print(f"{value} x {x} = {x*value}")
+    print(f"{value} * {x} = {x*value}")
     return
 
 
