@@ -1,7 +1,7 @@
 # This program takes iteration input from user and outputs 
 # a multiplication table with x(input) number of expressions 
 #
-# Referecnces: 
+# References: 
 # https://harpercollege.pressbooks.pub/programmingfundamentals
 # /chapter/python-examples-5/
 # https://www.w3schools.com/python/python_for_loops.asp
