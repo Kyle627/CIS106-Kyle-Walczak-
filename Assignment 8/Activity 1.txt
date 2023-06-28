@@ -2,6 +2,7 @@
 
 Main Program
   Get iteration value
+  Get Value
   Demonstrate for loop
 
 Get iteration:
@@ -12,11 +13,19 @@ Get iteration:
 	    Get iteration
 	Return Value:
 	    Iteration
+Get Value:
+	Parameters: 
+	    None
+	Process:
+	    Display Prompt
+	    Get Value
+	Return Value:
+	    Value
 
-Demonstrate for loops
+Demonstrate for loops(Iteration, value)
 	Parameters:
-	    Start (zero)
-	    Stop (input)
+	    Start 
+	    Stop 
 	    Increment 
 	Process: 
 	    Initialize count (0)
