@@ -29,3 +29,6 @@ During this assignment I learned about the importance of passing parameters thro
 
 During this session, I learned about conditionals. Using the conditionals were a bit tricky but eventually everything worked fine. I also learned about assignment verses equality. This session went over fairly smoothly, structed programming taught me how to write cleaner code to avoid spaghetti code. Using my first else/if/elif statement was interesting cause prior to this assignment everything was straight forward without any room for the operator to make selections. I learned that relationship operators yield Boolean values depending on the relationship of operands. This was interesting to think about, it's common sense after all pieces together but definitely interesting to learn.
 
+## Assignment 8
+
+During this session, I learned about For loops. I had trouble with my counter at first but learned from an external source on how to do it. The book instructed the use of "counter" but every time I had the word counter in my code I received a syntax error. I learned about how little code can produce a lot. Previously our assignments had us write a bit of code to output very little, this assignment has less code than the last but can output a lot more. 
