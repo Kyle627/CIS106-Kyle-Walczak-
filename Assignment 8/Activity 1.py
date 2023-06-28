@@ -19,7 +19,7 @@ def get_iteration():
     return iterations
 
 
-def demonstrate_for_loop(iterations, value):
+def process_expressions(iterations, value):
     for x in range(1, iterations + 1):
         display_result(value, x)
         x += 1
@@ -33,7 +33,7 @@ def display_result(value, x):
 def main():
     value = get_value()
     iterations = get_iteration()
-    demonstrate_for_loop(iterations, value) 
+    process_expressions(iterations, value) 
 
 
 main()
