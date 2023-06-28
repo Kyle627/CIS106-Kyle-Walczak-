@@ -20,7 +20,7 @@ def get_iteration():
 
 
 def demonstrate_for_loop(iterations, value):
-    for x in range(1, iterations +1):
+    for x in range(1, iterations + 1):
         display_result(value, x)
         x += 1
 
