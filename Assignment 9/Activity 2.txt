@@ -2,7 +2,7 @@
 
 Main Program
   Get Test Count
-  Get Scores
+  Get Total
   Get Average
   Display Result
 
@@ -15,16 +15,19 @@ Get Test Count:
 	Return Value:
 	    count
 
-Get Scores:
+Get Total:
 	Parameters: 
 	    Count
 	Process:
-	    Display Prompt
-	    Start (input)
-	    Stop (0)
-	    Decrement 
+		Initialize total
+		Initialize counter
+		Loop while counter < count
+		    Display Prompt
+			Get score
+			Add score to total
+			Increment counter
 	Return Value:
-	    Scores
+	    Total
 
 Get Average:
 	Parameters:
@@ -41,5 +44,4 @@ Display result:
 	Process: 
 	    Display average
 	Return Value:
-	    None. 
-
+	    None
