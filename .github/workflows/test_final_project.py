@@ -6,7 +6,7 @@ import test
 import urllib.request
 
 # FILENAME = FILENAME
-FILENAME = "cd_catalog.xml"
+FILENAME = "simple.xml"
 
 def setup_module(module):
     url = "https://www.w3schools.com/xml/" + FILENAME
