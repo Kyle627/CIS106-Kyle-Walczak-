@@ -32,3 +32,7 @@ During this session, I learned about conditionals. Using the conditionals were a
 ## Assignment 8
 
 During this session, I learned about For loops. I had trouble with my counter at first but learned from an external source on how to do it. The book instructed the use of "counter" but every time I had the word counter in my code I received a syntax error. I learned about how little code can produce a lot. Previously our assignments had us write a bit of code to output very little, this assignment has less code than the last but can output a lot more. I also learned about increment and decrement and was able to successfully use an increment in my code. 
+
+## Assignment 9
+
+During this session, I learned about while loops. Again, issues with the counter were occurring. During this session, I was able to use the word "counter" without getting an error. Initially, I had trouble thinking about averaging the scores without returning the individual scores. After that, the code seemed to run fine. I attempted to use Thonny IDE for the first time however, with network restrictions my work computer was unable to download the local version. I plan to install Thonny on my personal computer to gain more experience with other IDEs. 
