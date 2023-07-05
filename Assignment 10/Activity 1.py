@@ -19,7 +19,8 @@ def get_score():
         total += score
         counter += 1
     return total, counter
- 
+
+
 def calculate_average(total, counter):
     average_score = total / counter
     return average_score
