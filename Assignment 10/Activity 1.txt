@@ -1,0 +1,41 @@
+## This program takes test scores (amount of tests is dependent on user input) and averages the scores. 
+
+Main Program
+  Get Grade Score
+  Get Average
+  Display Result
+
+
+Get Grade Score:
+	Parameters:
+	    None
+	Process: 
+	    Initialize count = 0
+	    Initialize Total = 0
+	    Do Loop (Start)
+	    Display prompt
+	    Get test score
+	    Add score to total
+	    Count increment
+	    Stop loop
+	Return Value:
+	    Total, count
+
+
+Get Average:
+	Parameters:
+	    total
+	    count
+	Process: 
+  	    Average
+	Return Value:
+	    Average Score
+
+
+Display result:
+	Parameters: Average Score
+	    None
+	Process: 
+	    Display average
+	Return Value:
+	    None
