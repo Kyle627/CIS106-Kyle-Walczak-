@@ -16,17 +16,17 @@ def get_count():
 
 def get_score(count):
     total = 0
-    x = count -1 
+    X = count - 1
     while x >= 0:
         print("Enter test score:")
         score = int(input())
         total = total + score
-        x -= 1
+        X -= 1
     return total
     
 
 def calculate_average(total, count):
-    average_score = total/count
+    average_score = total / count
     return average_score
 
 
@@ -38,7 +38,7 @@ def display_results(average_score):
 def main():
     count = get_count()
     total = get_score(count)
-    average_score = calculate_average(total,count)
+    average_score = calculate_average(total, count)
     display_results(average_score)
 
 
