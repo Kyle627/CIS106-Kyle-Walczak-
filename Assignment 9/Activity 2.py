@@ -16,12 +16,12 @@ def get_count():
 
 def get_score(count):
     total = 0
-    X = count - 1
-    while X >= 0:
+    counter = count - 1
+    while counter >= 0:
         print("Enter test score:")
         score = int(input())
         total = total + score
-        X -= 1
+        counter -= 1
     return total
     
 
