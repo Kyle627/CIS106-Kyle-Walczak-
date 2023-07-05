@@ -17,7 +17,7 @@ def get_count():
 def get_score(count):
     total = 0
     X = count - 1
-    while x >= 0:
+    while X >= 0:
         print("Enter test score:")
         score = int(input())
         total = total + score
