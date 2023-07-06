@@ -36,3 +36,7 @@ During this session, I learned about For loops. I had trouble with my counter at
 ## Assignment 9
 
 During this session, I learned about while loops. Again, issues with the counter were occurring. During this session, I was able to use the word "counter" without getting an error. Initially, I had trouble thinking about averaging the scores without returning the individual scores. After that, the code seemed to run fine. I attempted to use Thonny IDE for the first time however, with network restrictions my work computer was unable to download the local version. I plan to install Thonny on my personal computer to gain more experience with other IDEs. I am excited to move on to the next style of loops. 
+
+## Assignment 10
+
+During this session, I learned more about loops. This assignment seemed to go the smoothest out of our loop assignments. I am not sure if that is because of practice or because it is a similar code to the previous assignment. I used GBD online to help debug my code. The biggest issue I had with this assignment was using the incorrect operator to divide two tuples. I had this issue because a tuple was never supposed to be produced. I fixed this by having total and counter defined with the same function, at one time. Whereas before I would define the total then, on the next line, define the counter. This causes tuple data types and does not process in the intended manner. 
