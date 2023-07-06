@@ -13,16 +13,18 @@ Get Grade Score:
 	    Initialize count = 0
 	    Initialize Total = 0
 	    Do Loop (Start)
-	    Display prompt
-	    Get test score
-	    Add score to total
-	    Count increment
-	    Stop loop
+			Display prompt
+			Get test score
+			if score < 0
+				exit loop
+			Add score to total
+		    Count increment
+		Calculate Average		
 	Return Value:
-	    Total, count
+	    Average
 
 
-Get Average:
+Calculate Average:
 	Parameters:
 	    total
 	    count
