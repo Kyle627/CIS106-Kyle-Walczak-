@@ -1,8 +1,7 @@
 ## This program takes test scores (amount of tests is dependent on user input) and averages the scores. 
 
 Main Program
-  Get Grade Score
-  Get Average
+  Get Grade Score (average)
   Display Result
 
 
