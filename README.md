@@ -40,3 +40,7 @@ During this session, I learned about while loops. Again, issues with the counter
 ## Assignment 10
 
 During this session, I learned more about loops. This assignment seemed to go the smoothest out of our loop assignments. I am not sure if that is because of practice or because it is a similar code to the previous assignment. I used GBD online to help debug my code. The biggest issue I had with this assignment was using the incorrect operator to divide two tuples. I had this issue because a tuple was never supposed to be produced. I fixed this by having total and counter defined with the same function, at one time. Whereas before I would define the total then, on the next line, define the counter. This causes tuple data types and does not process in the intended manner. 
+
+## Assignment 11
+
+During this session, I got my first taste of arrays. Although I sneaked a preview last week, when I was having trouble totaling the scores, entered. Actually using an array seems like it has a lot of uses especially when you get into dynamic arrays, basically making an Excel sheet behind the scenes. I used Thonny IDE for the first time and liked it a lot more than GBD online, it seems more interactive and new user friendly. Moving forward, while coding at home I will be using this IDE. I had issues with actually storing the test scores in the array and would output "none" until I assigned the input to a spot in the array, once that was resolved the code seemed to run fine. 
