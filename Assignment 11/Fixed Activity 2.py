@@ -8,7 +8,7 @@
 
 
 def get_test_count():
-    print("How many tests will you be entering?")
+    print("How many scores will you be entering?")
     count = int(input())
     return count
 
