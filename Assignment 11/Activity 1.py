@@ -20,8 +20,9 @@ def get_month():
 
 def array_process(year, month):
     months = ['January', 'February', 'March', 'April',
-              'May', 'June', 'July', 'September', 'October', 'November', 'December']
-    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+              'May', 'June', 'July', 'September',
+              'October', 'November', 'December']
+    days = [31,28,31,30,31,30,31,31,30,31,30,31]
     
     if month  == 'February' and year % 4 == 0 and (year % 100 != 0
             or year % 400 == 0):
