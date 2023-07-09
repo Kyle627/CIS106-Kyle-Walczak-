@@ -1,0 +1,43 @@
+## This program takes input year and month from user and outputs the number of days in that month
+
+Main Program
+	Get year
+	Get Month
+	Array Process 
+	Display result
+
+Get year
+	Parameters:
+	    None. 
+	Process:
+	    Display prompt
+	    Get year
+	Return Value:
+	    Year
+
+Get Month
+	Parameters:
+	    None. 
+	Process:
+	    Display prompt 
+	    Get Month
+	Return Value:
+	    Month
+
+Array Process: 
+	Parameters:
+	    Year, Month
+	Process:
+	    Determine if it’s a leap year
+	    Table array with months and days 
+	Return Value:
+	    Number of days 
+
+Display Result:
+	Parameters:
+	    Month, Year,  Number of Years. 
+	Process:
+	    Display result 
+	Return Value:
+	    None. 
+
