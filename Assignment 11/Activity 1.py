@@ -9,7 +9,8 @@
 
 months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 name_month = ['January', 'February', 'March', 'April',
-              'May', 'June', 'July', 'September', 'October', 'November', 'December']
+              'May', 'June', 'July', 'September', 
+              'October', 'November', 'December']
 days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 
@@ -21,7 +22,7 @@ def get_year():
 
 def get_month():
     print("What month would you like to know about?")
-    month = int(input())
+    month = int(input()) 
     return month
 
 
@@ -33,7 +34,10 @@ def array_process(year, month):
 
 
 def display_result(year, month, days):
-    print(f" {name_month[month-1]} {year} has {days} days")
+    if month == 12:
+        print(f" December {year} has {days} days")
+    if month != 12:
+         print(f" {name_month[month-1]} {year} has {days} days")
     return 
 
 
