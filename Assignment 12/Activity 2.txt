@@ -1,4 +1,4 @@
-## This program takes inputted test scores and sorts them from highest to lowest
+# This program takes inputted test scores from 0-100 and sorts from highest to lowest 
 
 Main Program
     Get test scores
