@@ -1,0 +1,55 @@
+## This program takes inputted test scores and sorts them from highest to lowest
+
+Main Program
+    Get score count
+    Get test scores
+    Sort 
+    Display result
+
+
+Get test count:
+	Parameters:
+	    None
+	Process:
+	    Display Prompt
+	    Get test count
+	Return Value: 
+	    Test count
+
+
+Get test scores:
+	Parameters:
+	    Count 
+	Process:
+	    Initialize array with [] null values 
+	    Initialize counter
+	    Start loop, loop while counter < count 
+	        Display prompt 
+	        Get test score
+	        Validate input
+	        Increment counter
+	        
+	Return Value: 
+	    Test scores array
+
+
+Sort array: 
+	Parameters:
+	    Test scores array
+	Process:
+	    Sort
+	Return Value: 
+	    Sorted array 
+
+
+Display result: 
+	Parameters:
+	    Sorted Array
+	Process:
+	     Display array 
+	Return Value: 
+	    None
+
+
+
+    
