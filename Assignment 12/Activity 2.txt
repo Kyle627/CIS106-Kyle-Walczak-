@@ -1,8 +1,10 @@
-# This program takes inputted test scores from 0-100 and sorts from highest to lowest 
+# This program takes inputted test scores and returns min, max and average of entered scores. 
 
 Main Program
     Get test scores
-    Sort 
+    Calculate min
+    Calculate max
+    Calculate avg
     Display result
 
 Get test scores:
@@ -14,29 +16,40 @@ Get test scores:
 	    Start loop, loop while input is true 
 	        Display prompt 
 	        Get test score
-	        Validate input (negative ends loop and passes the array to sort array function)
-	        
+	        Validate input (negative ends loop and passes the array to sort array function)	        
 	Return Value: 
 	    Test scores array
 
-
-Sort array: 
+Calculate min:
 	Parameters:
-	    Test scores array
+	    Test scores array(sorted)
 	Process:
 	    Sort
+	    Min = [0]
 	Return Value: 
-	    Sorted array 
+	    Min 
 
+Calculate max:
+	Parameters:
+	    Test scores array(sorted)
+	    count
+	Process
+	    Max = [Count]
+	Return Val
+	    max
+
+Calculate avg: 
+	Parameters:
+	    Test scores array, count
+	Process:
+	  Average = Sum array divided by count
+	Return Value: 
+	    average
 
 Display result: 
 	Parameters:
-	    Sorted Array
+	    Min, max, average
 	Process:
-	     Display array 
+	     Display result
 	Return Value: 
 	    None
-
-
-
-    
