@@ -16,7 +16,8 @@ Get test scores:
 	    Start loop, loop while input is true 
 	        Display prompt 
 	        Get test score
-	        Validate input (negative ends loop and passes the array to sort array function)	        
+	        Validate input (negative ends loop and passes the array to sort array function)
+			Append score to array
 	Return Value: 
 	    Test scores array
 
