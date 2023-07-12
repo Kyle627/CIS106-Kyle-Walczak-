@@ -25,7 +25,7 @@ Calculate min:
 	    Test scores array(sorted)
 	Process:
 	    Sort
-	    Min = [0]
+	    Min = array[0]
 	Return Value: 
 	    Min 
 
@@ -34,7 +34,7 @@ Calculate max:
 	    Test scores array(sorted)
 	    count
 	Process
-	    Max = [Count]
+	    Max = array[Count]
 	Return Val
 	    max
 
