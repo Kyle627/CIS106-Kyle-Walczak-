@@ -4,7 +4,6 @@
 # References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals
 # /chapter/python-examples-6/
-# 
 
 
 def get_test_scores():
@@ -24,12 +23,12 @@ def get_test_scores():
 def calculate_min(test_scores):
     test_scores.sort()
     min = test_scores[0]
-    return min, test_scores
+    return min
 
 
 def calculate_max(test_scores, counter):
-    max = test_scores[counter]
-    return max, counter
+    max = test_scores[counter -1]
+    return max
     
     
 def calculate_average(test_scores, counter):
@@ -39,12 +38,12 @@ def calculate_average(test_scores, counter):
     
 
 def display_result(min, max, average):
-    print(f"Min: [min], Max: [max], Average: [average]")
+    print(f"Min: {min}, Max: {max}, Average: {average}")
     return
     
     
 def main():
-    test_scores = get_test_scores()
+    test_scores, counter = get_test_scores()
     min = calculate_min(test_scores)
     max = calculate_max(test_scores, counter)
     average = calculate_average(test_scores, counter)    
