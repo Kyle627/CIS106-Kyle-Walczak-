@@ -4,6 +4,7 @@
 # References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals
 # /chapter/python-examples-6/
+# https://www.w3schools.com/python/python_ref_functions.asp
 
 
 def get_test_scores():
@@ -43,7 +44,7 @@ def display_result(min, max, average):
     
     
 def main():
-    test_scores, counter = get_test_scores()
+    test_scores, counter = get_test_scores() 
     min = calculate_min(test_scores)
     max = calculate_max(test_scores, counter)
     average = calculate_average(test_scores, counter)    
