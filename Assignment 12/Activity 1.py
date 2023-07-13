@@ -13,7 +13,7 @@ def get_test_scores():
     while True:
         test_score = int(input(f"Enter test score {counter +1} "
                                "(enter negative to stop): "))
-        if test_score <  0 or test_score > 100:
+        if test_score < 0 or test_score > 100:
             break
         test_scores.append(test_score)
         counter += 1
@@ -27,7 +27,7 @@ def calculate_min(test_scores):
 
 
 def calculate_max(test_scores, counter):
-    max = test_scores[counter -1]
+    max = test_scores[counter - 1]
     return max
     
     
@@ -38,7 +38,7 @@ def calculate_average(test_scores, counter):
     
 
 def display_result(min, max, average):
-    print(f"Min: {min}, Max: {max}, Average: {average}")
+    print(f"low: {min}, high: {max}, Average: {average}")
     return
     
     
