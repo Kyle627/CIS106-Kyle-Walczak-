@@ -1,0 +1,37 @@
+# This program takes inputted variables (separated by commas) and output them on their own line without a comma or space.
+
+Main
+	Get Variables
+	Split variables
+	Display result
+
+Get variables
+	Parameters:
+	    None.
+	Process:
+	    Display Prompt
+	    Get Variables 
+	Return Value: 
+	    Variables
+
+Split variables
+	Parameters:
+	    variables
+	Process:
+	    Split using built split() function 
+	Return Value: 
+	    Variables
+
+Display result 
+	Parameters:
+	    variables
+	Process:
+      Start for loop: 
+        for items in the array
+	      Remove additional spaces
+	      Display variables 
+	Return Value: 
+	    None.
+
+
+
