@@ -48,3 +48,7 @@ During this session, I got my first taste of arrays.  Although I sneaked a previ
 ## Assignment 12
 
 During this session, I got my second look at arrays. Using an array seems like it has a lot of uses especially when you get into dynamic arrays, basically making an Excel sheet behind the scenes. I used Thonny IDE and plan to continue using this IDE when available. I had issues with actually storing the test scores in the array and would output "none" until I assigned the input to a spot in the array, once that was resolved the code seemed to run fine. This assignment allows the user to determine the size of the array, something we haven't done yet. Defitenely interesting taking different routes with the program.  
+
+## Assignment 13
+
+During this session, I used string functions. The two functions I used were split() and strip(). The split function was the first of the two and it takes a string and split is into multiple pieces, creating an ilst. The next, strip, was used to remove extra whitespaces from the new set of variables in the list. I used Thonny for the entirety of this assignment and plan to continue using it moving forward. My one struggle with this assignment was using an f string without a placeholder. I changed this to a regular print line and the variables were showing prior to user input as "none". Once that was resolved to program seemed to run fine.  
