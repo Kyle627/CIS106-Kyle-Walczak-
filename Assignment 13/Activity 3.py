@@ -11,7 +11,7 @@
 
 def get_variables():
     variables = []
-    variables = input(f"Enter variables (separate each "
+    variables = input("Enter variables (separate each "
                           "variable with a comma): ")
     return variables
 
