@@ -14,8 +14,9 @@ def read_file(file):
     try: 
         with open(file, "r") as file:
             file_content = file.read()
-    except Exception as exception:
+    except Exception:
         print("ERROR: No file name found")
+        return
     return file_content
 
 
