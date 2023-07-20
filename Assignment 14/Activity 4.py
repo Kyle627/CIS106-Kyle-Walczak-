@@ -22,14 +22,17 @@ def read_file(file):
 def sort_file(file_content):
     content = file_content.replace(",", "").replace("\n", " ")
     
-    line1 = content[5:12] + ', ' + content[0:4] + ', ' + content[13:
-    35] + ', ' + content[36:53] + ', ' + content[54:68]
+    line1 = content[11:20] + ', ' + content[0:10] + ', ' + content[21:
+    35] + ', ' + content[36:40] + ', ' + content[41:43]  + ', ' + content[44:
+    50]
     
-    line2 = content[70:75] + ', ' + content[76:82] + ', ' + content[83:
-    100] + ', ' + content[101:120] + ', ' + content[121:126]
+    line2 = content[62:71] + ', ' + content[51:61] + ', ' + content[72:
+    86] + ', ' + content[87:93] + ', ' + content[94:96]  + ', ' + content[97:
+    102]
     
-    line3 = content[132:137] + ', ' + content[128:131] + ', ' + content[139:
-    155] + ', ' + content[156:168] + ', ' + content[169:174]
+    line3 = content[115:124] + ', ' + content[104:114] + ', ' + content[125:
+    139] + ', ' + content[140:146] + ', ' + content[147:149]  + ', ' + content[150:
+    155]
     
     lines = [line1, line2, line3]
     return lines
@@ -41,7 +44,7 @@ def display_result(lines):
 
 
 def main():
-    file = "add.txt"
+    file = "addresses.txt"
     file_content = read_file(file)
     lines = sort_file(file_content)
     display_result(lines)
