@@ -15,12 +15,12 @@ def read_file(file):
         with open(file, "r") as file:
             file_content = file.read()
     except Exception as exception:
-                print("ERROR: No file name found")
+            print("ERROR: No file name found")
     return file_content
 
 
 def sort_file(file_content):
-    content = file_content.replace(",","").replace("\n"," ")
+    content = file_content.replace("," , "").replace("\n" , " ")
     
     line1 = content[5:12] + ', ' + content[0:4] + ', ' + content[13:
     35] + ', ' + content[36:53] + ', ' + content[54:68]
@@ -36,8 +36,8 @@ def sort_file(file_content):
     
     
 def display_result(lines):
-    print (f"{lines[0]}\n{lines[1]}\n{lines[2]}")
-    
+    print(f"{lines[0]}\n{lines[1]}\n{lines[2]}")
+    return
     
 def main():
     file = "add.txt"
