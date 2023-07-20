@@ -25,7 +25,7 @@ def sort_file(file_content):
     
     line1 = content[11:20] + ', ' + content[0:10] + ', ' + content[21:
     35] + ', ' + content[36:40] + ', ' + content[41:43] + ', ' + content[44:
-    50]
+    51]
     
     line2 = content[62:71] + ', ' + content[51:61] + ', ' + content[72:
     86] + ', ' + content[87:93] + ', ' + content[94:96] + ', ' + content[97:
