@@ -46,4 +46,5 @@ def main():
     scores = parse_scores(file_content)
     display_result(scores)
 
+
 main()
