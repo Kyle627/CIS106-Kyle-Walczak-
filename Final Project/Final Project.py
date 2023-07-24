@@ -35,10 +35,17 @@ def group_items(cleaned_content):
         if '$' in item:
             price.append(item)
         else:
-            if len(item) > 5 and len(item) < 10:
+            if len(item) > 6 and len(item) < 10:
                 calories.append(item)
+            else:
+                if len(item) > 10 and len(item) < 35:
+                    name.append(item)
+                else:
+                    description.append(item)
     print(f"{price}")
     print(f"{calories}")
+    print(f"{name}")
+    print(f"{description}")
     print(type(grouped))
 
 
@@ -50,3 +57,5 @@ def main():
     
     
 main()
+
+
