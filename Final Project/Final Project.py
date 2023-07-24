@@ -20,8 +20,13 @@ def read_menu(menu):
 def parse_content(content):
     cleaned_content = re.sub(r'<.*?>', '', content)
     cleaned_content.strip()
-    print(f"{cleaned_content}")
-    print(type(cleaned_content))
+    return cleaned_content
+
+
+def group_items(cleaned_content):
+    grouped = cleaned_content.split('\n')
+    print(f"{grouped}")
+    print(type(grouped))
 
 
 def main():
@@ -31,7 +36,8 @@ def main():
     calories = []
     price = []
     content = read_menu(menu)
-    cleaned_content = parse_content(content) 
+    cleaned_content = parse_content(content)
+    grouped = group_items(cleaned_content)
     
     
 main()
