@@ -32,7 +32,11 @@ def group_items(cleaned_content):
     for item in grouped:
         if '$' in item:
             price.append(item)
-    print(f"{price[1]}")
+        else:
+            calroies = int(item)
+            if calories > 0:
+                calories.append(calories)
+    print(f"{calories}")
     print(type(grouped))
 
 
