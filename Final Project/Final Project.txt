@@ -1,1 +1,70 @@
 ## This program reads menu provided and outputs all items respectively. Then lists the total items, average calories, and average price.
+
+Main
+  name = []
+  description = []
+  calories = []
+  price = []
+  Read menu
+  Parse menu
+  Display Menu
+  Display Total/avgs
+
+Read menu
+  	Parameters:
+	    Menu
+	Process: 
+      Create exception handler 
+	    Try statement to read menu
+      while not end of file
+        read line
+        display line
+        contents = display line
+      try statement automatically closes file at "with"
+      Handle exceptions      
+      
+	Return Value:
+	    contents
+
+Parse menu
+    Parameters:
+      Contents
+      name = []
+      description = []
+      calories = []
+      price = []
+    Process:
+      assign contents to respective arrays
+      not too sure how yet, I have 2 strings, a float and an int to mess around with logic
+      append.item
+    Return Value:
+        name = []
+        description = []
+        calories = []
+        price = []
+
+Display menu
+    Parameters:
+        name = []
+        description = []
+        calories = []
+        price = []
+    Process:
+        start for loop
+        for index in range len(name)
+        output name[], description[], calories [], price[]
+    Return:
+      None.
+
+Display Total
+    Parameters: 
+        name = []
+        description = []
+        calories = []
+        price = []
+  Process: 
+    print len(name) " items - "
+    print sum(calories) / len(calories) " average calories -"
+    print sum(price) / len(price) " average price"
+    
+    
