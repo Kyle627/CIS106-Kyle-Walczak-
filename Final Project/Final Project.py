@@ -20,8 +20,13 @@ def parse_content(content):
 
 def main():
     menu = "menu.xml"
+    name = []
+    description = []
+    calories = []
+    price = []
     content = read_menu(menu)
     parse_content(content) 
     
     
 main()
+
