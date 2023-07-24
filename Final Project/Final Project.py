@@ -19,22 +19,25 @@ def read_menu(menu):
     
 def parse_content(content):
     cleaned_content = re.sub(r'<.*?>', '', content)
-    cleaned_content.strip()
     return cleaned_content
 
 
 def group_items(cleaned_content):
+    name = []
+    description = []
+    calories = []
+    price = [] 
+    cleaned_content.strip()
     grouped = cleaned_content.split('\n')
-    print(f"{grouped}")
+    for item in grouped:
+        if '$' in item:
+            price.append(item)
+    print(f"{price[1]}")
     print(type(grouped))
 
 
 def main():
     menu = "menu.xml"
-    name = []
-    description = []
-    calories = []
-    price = []
     content = read_menu(menu)
     cleaned_content = parse_content(content)
     grouped = group_items(cleaned_content)
