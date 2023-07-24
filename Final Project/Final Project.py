@@ -4,6 +4,9 @@
 # References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals
 # /chapter/python-examples-8/
+# https://youtu.be/K8L6KVGG-7o
+import re
+
 def read_menu(menu):
     try:
         with open(menu, "r") as file:
@@ -15,7 +18,10 @@ def read_menu(menu):
     
     
 def parse_content(content):
-    print(f"{content}")
+    cleaned_content = re.sub(r'<.*?>', '', content)
+    cleaned_content.strip()
+    print(f"{cleaned_content}")
+    print(type(cleaned_content))
 
 
 def main():
@@ -25,7 +31,7 @@ def main():
     calories = []
     price = []
     content = read_menu(menu)
-    parse_content(content) 
+    cleaned_content = parse_content(content) 
     
     
 main()
