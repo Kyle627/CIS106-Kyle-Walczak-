@@ -5,6 +5,8 @@
 # https://harpercollege.pressbooks.pub/programmingfundamentals
 # /chapter/python-examples-8/
 # https://youtu.be/K8L6KVGG-7o
+# https://docs.python.org/3/library/stdtypes.html#str.isdigit
+
 import re
 
 def read_menu(menu):
@@ -33,9 +35,9 @@ def group_items(cleaned_content):
         if '$' in item:
             price.append(item)
         else:
-            calroies = int(item)
-            if calories > 0:
-                calories.append(calories)
+            if len(item) > 5 and len(item) < 10:
+                calories.append(item)
+    print(f"{price}")
     print(f"{calories}")
     print(type(grouped))
 
@@ -48,4 +50,3 @@ def main():
     
     
 main()
-
