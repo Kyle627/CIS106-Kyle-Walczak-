@@ -20,19 +20,21 @@ def read_menu(menu):
     
 def get_item(content):
     names = re.findall("<name>(.*?)</name>", content, re.DOTALL)
+    return names
     description = re.findall("<description>(.*?)</description>", content, re.DOTALL)
+    return description
     calories = re.findall("<calories>(.*?)</calories>", content, re.DOTALL)
+    return calories
     price = re.findall("<price>(.*?)</price>", content, re.DOTALL)
-    return names, price, calories, description
+    return price
     
     
 def display_result(names, price, calories, description):
     i = 0
-    while i < len(names):
+    while i < len(price):
         print(f"{names[i]} - {description[i]} - {calories[i]} - {price[i]} \n")
         i += 1 
-    print(f"len({names} + 1) items")
-
+    print(f" {i} items -")
 
 def main():
     menu = "menu.xml"
@@ -42,6 +44,5 @@ def main():
     calories = get_item(content)
     price = get_item(content)
     display_result(names, price, calories, description)
-
-
+    
 main()
