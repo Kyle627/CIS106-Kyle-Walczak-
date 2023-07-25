@@ -10,6 +10,7 @@
 # regex-to-find-words-between-two-tags
 # https://stackoverflow.com/questions/53574946/
 # re-findall-return-separate-non-overlapping-results
+# https://www.geeksforgeeks.org/sum-of-list-with-string-types-in-python/
 import re
 
 def read_menu(menu):
@@ -29,11 +30,16 @@ def get_item(content, tag):
     
     
 def display_result(names, price, calories, description):
+    total_calories = sum([int(i) for i in calories if type(i)== int or i.isdigit()])
+    average_calories = total_calories / len(calories)
+    total_price = sum([int(i) for i in price if type(i)== float or i.isdigit()])
+    average_price = total_price / len(price)
     i = 0
     while i < len(price):
         print(f"{names[i]} - {description[i]} - {calories[i]} - {price[i]} \n")
         i += 1 
-    print(f" {i} items -")
+    print(f" {i} Items - {average_calories} Calories - ")
+    print(f"{total_price}")
 
 
 def main():
