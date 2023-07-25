@@ -7,6 +7,7 @@
 # https://youtu.be/K8L6KVGG-7o
 # https://docs.python.org/3/library/stdtypes.html#str.isdigit
 # https://stackoverflow.com/questions/22247957/regex-to-find-words-between-two-tags
+# https://stackoverflow.com/questions/53574946/re-findall-return-separate-non-overlapping-results
 import re
 
 def read_menu(menu):
@@ -16,25 +17,12 @@ def read_menu(menu):
                     content = file.read()
     except Exception:
         print("File not found")
+        return None
     return content
     
-def get_item(content):
-    names = []
-    description = []
-    calories = []
-    price = []
-    if len(names) == 0:
-        names = re.findall("<name>(.*?)</name>", content, re.DOTALL)
-        return names
-    elif len(description) == 0:
-        description = re.findall("<description>(.*?)</description>", content, re.DOTALL)
-        return description
-    elif len(calories) == 0:
-        calories = re.findall("<calories>(.*?)</calories>", content, re.DOTALL)
-        return calories
-    else: 
-        price = re.findall("<price>(.*?)</price>", content, re.DOTALL)
-        return price
+def get_item(content, tag):
+    items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
+    return items 
     
     
 def display_result(names, price, calories, description):
@@ -47,10 +35,10 @@ def display_result(names, price, calories, description):
 def main():
     menu = "menu.xml"
     content = read_menu(menu)
-    names = get_item(content)
-    description = get_item(content)
-    calories = get_item(content)
-    price = get_item(content)
+    names = get_item(content, "name")
+    description = get_item(content, "description")
+    calories = get_item(content, "calories")
+    price = get_item(content, "price")
     display_result(names, price, calories, description)
     
 main()
