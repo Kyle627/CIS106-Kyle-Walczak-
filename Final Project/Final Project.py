@@ -23,15 +23,15 @@ def get_item(content):
     description = re.findall("<description>(.*?)</description>", content, re.DOTALL)
     calories = re.findall("<calories>(.*?)</calories>", content, re.DOTALL)
     price = re.findall("<price>(.*?)</price>", content, re.DOTALL)
-    print(f"{names}")
-    print(f"{price}")
-    print(f"{calories}")
-    print(f"{description}")
     return names, price, calories, description
     
     
 def display_result(names, price, calories, description):
-    print(f")
+    i = 0
+    while i < len(names):
+        print(f"{names[i]} - {description[i]} - {calories[i]} - {price[i]} \n")
+        i += 1 
+    print(f"len({names} + 1) items")
 
 
 def main():
@@ -41,6 +41,7 @@ def main():
     description = get_item(content)
     calories = get_item(content)
     price = get_item(content)
-    #display_result(names, price, calories, description)
-    
+    display_result(names, price, calories, description)
+
+
 main()
