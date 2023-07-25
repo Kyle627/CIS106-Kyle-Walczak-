@@ -19,14 +19,22 @@ def read_menu(menu):
     return content
     
 def get_item(content):
-    names = re.findall("<name>(.*?)</name>", content, re.DOTALL)
-    return names
-    description = re.findall("<description>(.*?)</description>", content, re.DOTALL)
-    return description
-    calories = re.findall("<calories>(.*?)</calories>", content, re.DOTALL)
-    return calories
-    price = re.findall("<price>(.*?)</price>", content, re.DOTALL)
-    return price
+    names = []
+    description = []
+    calories = []
+    price = []
+    if len(names) == 0:
+        names = re.findall("<name>(.*?)</name>", content, re.DOTALL)
+        return names
+    elif len(description) == 0:
+        description = re.findall("<description>(.*?)</description>", content, re.DOTALL)
+        return description
+    elif len(calories) == 0:
+        calories = re.findall("<calories>(.*?)</calories>", content, re.DOTALL)
+        return calories
+    else: 
+        price = re.findall("<price>(.*?)</price>", content, re.DOTALL)
+        return price
     
     
 def display_result(names, price, calories, description):
