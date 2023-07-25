@@ -1,50 +1,44 @@
-# This program takes file "add.txt" filled as
-# an address book and outputs the address in 
-# format: Lastname, Firstname, Address, City,
-# State/Province/Region, PostalCode
+# This program reads menu provided and outputs all items respectively.
+# Then lists the total items, average calories, and average price.
 #
 # References:
 # https://harpercollege.pressbooks.pub/programmingfundamentals
-# /chapter/python-examples-7/
-# https://harpercollege.pressbooks.pub/programmingfundamentals
-# /chapter/python-examples-6/
-# https://youtu.be/Uh2ebFW8OYM?t=378
+# /chapter/python-examples-8/
+# https://youtu.be/K8L6KVGG-7o
+# https://docs.python.org/3/library/stdtypes.html#str.isdigit
+# https://stackoverflow.com/questions/22247957/regex-to-find-words-between-two-tags
+# https://stackoverflow.com/questions/53574946/re-findall-return-separate-non-overlapping-results
+import re
 
-def read_file(file):
+def read_menu(menu):
     try:
-        with open(file, "r") as file:
-            file_content = file.read()
+        with open(menu, "r") as file:
+            for line in file:
+                    content = file.read()
     except Exception:
-        print("ERROR: No file name found")
+        print("File not found")
         return None
-    return file_content
-
-
-def parse_scores(file_content):
-    scores = []
-    lines = file_content.strip().split('\n')[1:]
-
-    for line in lines:
-        name, score = line.split(',')
-        score = int(score)
-        scores.append(score)
-
-    return scores
-
-
-def display_result(scores):
-    print(f"Scores: {scores}")
-    print(f"High Score: {max(scores)}")
-    print(f"Low Score: {min(scores)}")
-    average_score = sum(scores) / len(scores)
-    print(f"Average Score: {average_score:.2f}")
-
+    return content
+    
+def get_item(content, tag):
+    items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
+    return items 
+    
+    
+def display_result(names, price, calories, description):
+    i = 0
+    while i < len(price):
+        print(f"{names[i]} - {description[i]} - {calories[i]} - {price[i]} \n")
+        i += 1 
+    print(f" {i} items -")
 
 def main():
-    file = "scores.txt"
-    file_content = read_file(file)
-    scores = parse_scores(file_content)
-    display_result(scores)
-
-
+    menu = "menu.xml"
+    content = read_menu(menu)
+    names = get_item(content, "name")
+    description = get_item(content, "description")
+    calories = get_item(content, "calories")
+    price = get_item(content, "price")
+    display_result(names, price, calories, description)
+    
 main()
