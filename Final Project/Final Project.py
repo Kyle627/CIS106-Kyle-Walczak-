@@ -6,8 +6,10 @@
 # /chapter/python-examples-8/
 # https://youtu.be/K8L6KVGG-7o
 # https://docs.python.org/3/library/stdtypes.html#str.isdigit
-# https://stackoverflow.com/questions/22247957/regex-to-find-words-between-two-tags
-# https://stackoverflow.com/questions/53574946/re-findall-return-separate-non-overlapping-results
+# https://stackoverflow.com/questions/22247957/
+# regex-to-find-words-between-two-tags
+# https://stackoverflow.com/questions/53574946/
+# re-findall-return-separate-non-overlapping-results
 import re
 
 def read_menu(menu):
@@ -19,7 +21,8 @@ def read_menu(menu):
         print("File not found")
         return None
     return content
-    
+
+
 def get_item(content, tag):
     items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
     return items 
@@ -32,6 +35,7 @@ def display_result(names, price, calories, description):
         i += 1 
     print(f" {i} items -")
 
+
 def main():
     menu = "menu.xml"
     content = read_menu(menu)
@@ -40,5 +44,6 @@ def main():
     calories = get_item(content, "calories")
     price = get_item(content, "price")
     display_result(names, price, calories, description)
-    
+
+
 main()
