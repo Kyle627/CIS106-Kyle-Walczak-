@@ -27,7 +27,11 @@ def get_item(content):
     print(f"{price}")
     print(f"{calories}")
     print(f"{description}")
+    return names, price, calories, description
     
+    
+def display_result(names, price, calories, description):
+    print(f")
 
 
 def main():
@@ -37,6 +41,6 @@ def main():
     description = get_item(content)
     calories = get_item(content)
     price = get_item(content)
-    
+    #display_result(names, price, calories, description)
     
 main()
