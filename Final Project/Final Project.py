@@ -39,10 +39,17 @@ def get_item(content, tag):
 def display_result(names, price, calories, description):
     total_calories = sum([int(i) for i in calories if type(i) == int or
     i.isdigit()])
-    average_calories = total_calories / len(calories)
     total_price = sum([float(i) for i in price if type(i) == str or
     i.isdigit()])
-    average_price = total_price / len(price)
+    try:
+        average_calories = total_calories / len(calories)
+        average_price = total_price / len(price)
+    except ZeroDivisionError:
+        print("Error: Missing or bad data")
+        quit()
+    except:
+        quit()
+        
     counter = 0
     while counter < len(price):
         print(f"{names[counter]} - {description[counter]} - "
