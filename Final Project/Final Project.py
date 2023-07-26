@@ -13,15 +13,14 @@
 # https://www.geeksforgeeks.org/sum-of-list-with-string-types-in-python/
 import re
 
-
 def read_menu(menu):
     try:
         with open(menu, "r") as file:
             for line in file:
-                    file = file.read()
-                    content = file.replace('$','')
+                file = file.read()
+                content = file.replace('$' , '')
     except Exception:
-        print("File not found")
+        print("File is missing")
         return None
     return content
 
@@ -32,15 +31,19 @@ def get_item(content, tag):
     
     
 def display_result(names, price, calories, description):
-    total_calories = sum([int(i) for i in calories if type(i)== int or i.isdigit()])
+    total_calories = sum([int(i) for i in calories if type(i)== int or
+    i.isdigit()])
     average_calories = total_calories / len(calories)
-    total_price = sum([float(i) for i in price if type(i)== str or i.isdigit()])
+    total_price = sum([float(i) for i in price if type(i)== str or
+    i.isdigit()])
     average_price = total_price / len(price)
     i = 0
     while i < len(price):
-        print(f"{names[i]} - {description[i]} - {calories[i]} - ${price[i]} \n")
+        print(f"{names[i]} - {description[i]} - {calories[i]}"
+        f" - ${price[i]} \n")
         i += 1 
-    print(f"{i} Items - {average_calories:.0f} Average Calories - ${average_price:.2f} Average Price")
+    print(f"{i} Items - {average_calories:.0f} Average Calories - "
+    f"${average_price:.2f} Average Price")
 
 
 def main():
