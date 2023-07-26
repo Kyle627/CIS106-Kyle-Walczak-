@@ -21,21 +21,21 @@ def read_menu(menu):
             for line in file:
                 file = file.read()
                 content = file.replace('$', '')
-    except FileNotFoundError:
+                return content
+    except UnboundLocalError:
         print("File is missing")
         quit()
     except:
         quit()
-    return content
 
 
 def get_item(content, tag):
     try:
-        if len(content) > 0:
-            items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
+        items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
+        return items
     except:
-        print(" ")
-    return items
+        print("File is empty")
+        quit()
 
     
 def display_result(names, price, calories, description):
