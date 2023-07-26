@@ -11,7 +11,7 @@
 # https://stackoverflow.com/questions/53574946/
 # re-findall-return-separate-non-overlapping-results
 # https://www.geeksforgeeks.org/sum-of-list-with-string-types-in-python/
-# fix missing file? add empty file, add no records, add missing fields, bad data
+# https://www.youtube.com/watch?v=ZUqGMDppEDs&t=613s&ab_channel=NeuralNine
 import re
 
 
@@ -21,16 +21,22 @@ def read_menu(menu):
             for line in file:
                 file = file.read()
                 content = file.replace('$', '')
-    except Exception:
+    except FileNotFoundError:
         print("File is missing")
-        return 
+        quit()
+    except:
+        quit()
     return content
 
 
 def get_item(content, tag):
-    items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
-    return items 
-    
+    try:
+        if len(content) > 0:
+            items = re.findall(f"<{tag}>(.*?)</{tag}>", content, re.DOTALL)
+    except:
+        print(" ")
+    return items
+
     
 def display_result(names, price, calories, description):
     total_calories = sum([int(i) for i in calories if type(i) == int or
