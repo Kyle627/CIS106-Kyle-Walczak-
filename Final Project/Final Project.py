@@ -44,10 +44,8 @@ def display_result(names, price, calories, description):
     try:
         average_calories = total_calories / len(calories)
         average_price = total_price / len(price)
-    except ZeroDivisionError:
-        print("Error: Missing or bad data")
-        quit()
     except:
+        print("Error: Missing or bad data")
         quit()
         
     counter = 0
