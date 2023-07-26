@@ -22,10 +22,8 @@ def read_menu(menu):
                 file = file.read()
                 content = file.replace('$', '')
                 return content
-    except UnboundLocalError:
-        print("File is missing")
-        quit()
     except:
+        print("File is missing")
         quit()
 
 
@@ -55,7 +53,7 @@ def display_result(names, price, calories, description):
 
 
 def main():
-    menu = "simple.xml"
+    menu = "simplde.xml"
     content = read_menu(menu)
     names = get_item(content, "name")
     description = get_item(content, "description")
