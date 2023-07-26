@@ -11,6 +11,7 @@
 # https://stackoverflow.com/questions/53574946/
 # re-findall-return-separate-non-overlapping-results
 # https://www.geeksforgeeks.org/sum-of-list-with-string-types-in-python/
+# fix missing file? add empty file, add no records, add missing fields, bad data
 import re
 
 
