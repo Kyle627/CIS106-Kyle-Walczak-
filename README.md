@@ -56,3 +56,7 @@ During this session, I used string functions. The two functions I used were spli
 ## Assignment 14
 
 During this session, I used a try block to open a file and read from it. From an external source, I also learned about writing to files and appending to files. I struggled a lot with the data type. My strings would consistently change to lists after applying certain built-in string functions. I originally wanted to make a more robust program that would allow for more addressees to be added and the code would still work. I was unsuccessful in generating the logic to perform this. After giving up, I sorted my file by calling specific chunks of my string. Hopefully, with more practice of reading and writing to files I will learn more efficient ways of converting the data accordingly. 
+
+## Final Project
+
+Throughout this course, I learned a lot. Coming in, I had no experience with programming. I understood what a loop was and what a variable was but I never programmed anything. I learned about good programming practices that will hopefully follow along through my programming career. I would like to use what I've learned and apply it to future computer science classes. I would like to one day create programs to automate my personal life. I am excited to take on projects and learn more about object oriented programming. All in all, I learned good fundamentals and and a easily readable style. 
