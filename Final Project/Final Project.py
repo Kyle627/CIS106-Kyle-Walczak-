@@ -13,12 +13,13 @@
 # https://www.geeksforgeeks.org/sum-of-list-with-string-types-in-python/
 import re
 
+
 def read_menu(menu):
     try:
         with open(menu, "r") as file:
             for line in file:
                 file = file.read()
-                content = file.replace('$' , '')
+                content = file.replace('$', '')
     except Exception:
         print("File is missing")
         return None
@@ -31,10 +32,10 @@ def get_item(content, tag):
     
     
 def display_result(names, price, calories, description):
-    total_calories = sum([int(i) for i in calories if type(i)== int or
+    total_calories = sum([int(i) for i in calories if type(i) == int or
     i.isdigit()])
     average_calories = total_calories / len(calories)
-    total_price = sum([float(i) for i in price if type(i)== str or
+    total_price = sum([float(i) for i in price if type(i) == str or
     i.isdigit()])
     average_price = total_price / len(price)
     i = 0
