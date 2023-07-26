@@ -23,7 +23,7 @@ def read_menu(menu):
                 content = file.replace('$', '')
     except Exception:
         print("File is missing")
-        return None
+        return 
     return content
 
 
