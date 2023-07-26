@@ -40,8 +40,8 @@ def display_result(names, price, calories, description):
     average_price = total_price / len(price)
     counter = 0
     while counter < len(price):
-        print(f"{names[counter]} - {description[counter]} - {calories[counter]}"
-        f" - ${price[counter]} \n")
+        print(f"{names[counter]} - {description[counter]} - "
+              f"{calories[counter]} - ${price[counter]} \n")
         counter += 1 
     print(f"{counter} Items - {average_calories:.0f} Average Calories - "
     f"${average_price:.2f} Average Price")
