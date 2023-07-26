@@ -44,7 +44,7 @@ def display_result(names, price, calories, description):
 
 
 def main():
-    menu = "menu.xml"
+    menu = "simple.xml"
     content = read_menu(menu)
     names = get_item(content, "name")
     description = get_item(content, "description")
