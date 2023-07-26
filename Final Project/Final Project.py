@@ -38,12 +38,12 @@ def display_result(names, price, calories, description):
     total_price = sum([float(i) for i in price if type(i) == str or
     i.isdigit()])
     average_price = total_price / len(price)
-    i = 0
-    while i < len(price):
-        print(f"{names[i]} - {description[i]} - {calories[i]}"
-        f" - ${price[i]} \n")
-        i += 1 
-    print(f"{i} Items - {average_calories:.0f} Average Calories - "
+    counter = 0
+    while counter < len(price):
+        print(f"{names[counter]} - {description[counter]} - {calories[counter]}"
+        f" - ${price[counter]} \n")
+        counter += 1 
+    print(f"{counter} Items - {average_calories:.0f} Average Calories - "
     f"${average_price:.2f} Average Price")
 
 
