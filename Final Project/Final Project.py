@@ -47,7 +47,7 @@ def display_result(names, price, calories, description):
     except:
         print("Error: Missing or bad data")
         quit()
-        
+
     counter = 0
     while counter < len(price):
         print(f"{names[counter]} - {description[counter]} - "
@@ -58,13 +58,17 @@ def display_result(names, price, calories, description):
 
 
 def main():
-    menu = "simple.xml"
-    content = read_menu(menu)
-    names = get_item(content, "name")
-    description = get_item(content, "description")
-    calories = get_item(content, "calories")
-    price = get_item(content, "price")
-    display_result(names, price, calories, description)
+    try:
+        menu = "simple.xml"
+        content = read_menu(menu)
+        names = get_item(content, "name")
+        description = get_item(content, "description")
+        calories = get_item(content, "calories")
+        price = get_item(content, "price")
+        display_result(names, price, calories, description)
+    except:
+        print("Error: Missing or bad data")
+    quit()
 
 
 main()
