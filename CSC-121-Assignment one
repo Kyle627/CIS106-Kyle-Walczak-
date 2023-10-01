@@ -103,7 +103,7 @@ int main() {
     return 0;
 }
 ____________________________________________________________________________________
-ass4 
+ass4 still needs output formatted in correct manner
 // This program takes inputted weekly sales and outputs
 // gross pay, federal tax paid, social security paid,
 // retirement contribution, a total and total take home pay
