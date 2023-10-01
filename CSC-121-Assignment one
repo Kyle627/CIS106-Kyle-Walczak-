@@ -1,0 +1,141 @@
+ass1 
+// This program takes user input of year
+// Outputs the day and month easter was on for that year
+//
+// REFERENCES:
+// http://craie-programming.org/OER/
+// ExploringCpp.AdventureBegins.Basics.pdf 2.3.3.2
+// https://stackoverflow.com/questions/49438423/
+// enum-and-a-function-that-returns-the-month-name-as-a-string
+#include <iostream>
+using namespace std;
+
+int main() {
+    int y,a,b,c,d,e,g,h,j,k,m,r,n,p;
+    cout << "Enter your year:" << endl;
+    cin >> y;
+    // instructions copied from assignment
+    a = y % 19;
+    b = y / 100;
+    c = y % 100;
+    d = b / 4;
+    e = b % 4;
+    g = (8 * b + 13) / 25;
+    h = (19 * a + b - d - g + 15) % 30;
+    j = c / 4;
+    k = c % 4;
+    m = (a + 11 * h) / 319;
+    r = (2 * e + 2 * j - k - h + m + 32) % 7;
+    n = (h - m + r + 90) / 25;
+    p = (h - m + r + n + 19) % 32;
+    enum MonthNums {January = 1, February, March, April, May, June,
+            July, August, Sepember, October, November, December};
+    // stackoverflow taught me this
+    const char *Months[] = {
+            "January", "February", "March", "April", "May",
+            "June", "July","August", "September", "October",
+            "November", "December", "NA"
+    };
+    cout << "Easter was on day: " << p << " of " << Months[n-1] << endl;
+    return 0;
+}
+____________________________________________________________________________
+ass2
+// This program takes integer input and
+// separates is with spaces
+//
+// REFERECNCES:
+// https://www.youtube.com/watch?v=8BRnlOEf
+// jp0&ab_channel=CodewithHabib <sstream>
+// https://www.youtube.com/watch?v=s7w-
+// q2RoIFg&t=327s&ab_channel=ChristenMalloy loop
+#include <sstream>
+#include <iostream>
+using namespace std;
+int main() {
+    int number;
+    string fixed;
+    cout << "Enter number:";
+    cin >> number;
+    stringstream ss;
+    ss << number;
+    fixed = ss.str();
+    // didn't notice this wasn't needed until after I added it
+    if (fixed.length() >=5){
+        cout << "Input must less than or equal to 5 numbers";
+        return 0;}
+    // same here
+    if (number < 0){
+        cout << "Input must a positive number";
+        return 0;}
+    // youtube link teaches this
+    for ( int i = 0; i < fixed.length(); i++)
+        cout << fixed[i] << " ";
+    cout << endl;
+    return 0;
+}
+__________________________________________________________________________________
+ass3
+// This program takes two military times as input
+// The difference between the time will outputted
+//
+// REFERENCES:
+// http://craie-programming.org/OER/
+// ExploringCpp.AdventureBegins.Basics.pdf 2.6.2
+#include <iostream>
+using namespace std;
+int main() {
+    int time1;
+    int time2;
+    int total_minutes;
+    int hours;
+    int minutes;
+    cout << "Enter first military time:";
+    cin >> time1;
+    cout << "Enter second military time:";
+    cin >> time2;
+    total_minutes = time1 - time2;
+    hours = abs(total_minutes) / 100;
+    minutes = abs(total_minutes) % 100;
+    cout << "there are " << hours <<
+    " hours and " << minutes << " minutes " <<
+    "between these times" << endl;
+    return 0;
+}
+____________________________________________________________________________________
+ass4 
+// This program takes inputted weekly sales and outputs
+// gross pay, federal tax paid, social security paid,
+// retirement contribution, a total and total take home pay
+// Employee receives 8% of sales as pay
+// tax rate is at 16%
+// contributes 8% towards retirement
+// contributes 6% to SS
+// REFERENCES:
+//
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Sales;
+    float TakeHome;
+    float Tax;
+    float SocialSecurity;
+    float Retirement;
+    cout << "Enter weekly sales:";
+    cin >> Sales;
+    TakeHome = Sales * .08;
+    Tax = TakeHome * .16;
+    SocialSecurity = TakeHome * .06;
+    Retirement = TakeHome * .08;
+    cout << Sales << endl;
+    cout << TakeHome << endl;
+    cout << Tax << endl;
+    cout << SocialSecurity << endl;
+    cout << Retirement << endl;
+
+    return 0;
+}
+
+
+
