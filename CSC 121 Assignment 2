@@ -1,0 +1,147 @@
+#include <iostream>
+using namespace std;
+
+int getNum();
+int compareNum(int num1, int num2);
+string displayResults(int smallestnum);
+
+int main() {
+    int num1 = getNum();
+    int num2 = getNum();
+    int smallestnum = compareNum(num1, num2);
+    displayResults(smallestnum);
+    return 0;
+}
+int getNum() {
+    int num;
+    cout << "Please enter a numeric value:" << endl;
+    cin >> num;
+    return num;
+}
+int compareNum(int num1, int num2){
+    int smallestnum = 9999;
+    if(num1 < num2)
+        smallestnum = num1;
+    else
+        smallestnum = num2;
+    return smallestnum;
+}
+string displayResults(int smallestnum) {
+    cout << "The smallest value is: " << smallestnum << endl;
+}
+
+_____________________________________________________________________
+
+#include <iostream>
+using namespace std;
+
+int getAmount();
+int determineCharge(int amount);
+string displayResult(int charge, int amount);
+
+int main() {
+    int amount = getAmount();
+    int charge = determineCharge(amount);
+    displayResult(charge, amount);
+    return 0;
+}
+int getAmount(){
+    float amount;
+    cout << "Enter a purcahse amount to find "
+            "out your shipping charges" << endl;
+    cin >> amount;
+    return amount;
+}
+int determineCharge(int amount){
+    float charge;
+
+    if (amount >= 5000)
+    charge = 20.00;
+    else if (amount >= 1000.01)
+    charge = 15.00;
+    else if (amount >= 500.01)
+    charge = 10.00;
+    else if (amount >= 250.01)
+    charge = 8.00;
+    else
+    charge = 5.00;
+    return charge;
+}
+string displayResult(int charge, int amount){
+    cout << "The shipping charge on a purchase of " << amount <<
+            " is $" << charge << endl;
+}
+
+_____________________________________________________________________
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+string getGrade();
+float determineNum(char letter, char precedent);
+char getLetter(string grade);
+char getPrecedent(string grade);
+void displayResult(float number);
+
+int main() {
+    string grade = getGrade();
+    char letter = getLetter(grade);
+    char precedent = getPrecedent(grade);
+    float number = determineNum(letter, precedent);
+    displayResult(number);
+    return 0;
+}
+
+string getGrade(){
+    string grade;
+    cout << "Enter a letter grade: ";
+    cin >> grade;
+    return grade;
+}
+char getLetter(string grade){
+    char letter;
+    letter = grade[0];
+    return letter;
+}
+char getPrecedent(string grade){
+    char precedent;
+    precedent = grade[1];
+    return precedent;
+}
+float determineNum(char letter, char precedent){
+    float number = 0.0;
+    switch (letter){
+        case 'A':
+            number = 4.0;
+            break;
+        case 'B':
+            number = 3.0;
+            break;
+        case 'C':
+            number = 2.0;
+            break;
+        case 'D':
+            number = 1.0;
+            break;
+        case 'F':
+            number = 0.0;
+            break;
+        default:
+            cout << "Invaild grade" << endl;
+    }
+    if (precedent == '+')
+        number += .3;
+    else if (precedent == '-')
+        number -= .3;
+    else
+        number = number;
+    return number;
+}
+void displayResult(float number){
+    cout << "The equivalent number grade is " <<
+         setprecision(2) << number << endl;
+}
+_____________________________________________________________________
+
