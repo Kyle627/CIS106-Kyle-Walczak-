@@ -1,1 +1,52 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string getThousands(int number);
+string getHundreds(int number);
+string getTens(int number);
+string getOnes(int number);
+
+int main() {
+    int number;
+    string thousands, hundreds, tens, ones;
+    cout << "Enter the whole number less than 4,000 you wish to convert: ";
+    cin >> number;
+
+    if (number <= 0 || number >= 4000) {
+        cout << "Number must be between 1 and 3999." << endl;
+        return 1;
+    }
+
+    thousands = getThousands(number);
+    hundreds = getHundreds(number);
+    tens = getTens(number);
+    ones = getOnes(number);
+
+    cout << "The roman numeral is " << thousands << hundreds << tens << ones;
+    return 0;
+}
+string getThousands(int number) {
+    string thousands[] = {"", "M", "MM", "MMM"};
+    return thousands[number / 1000];
+}
+
+string getHundreds(int number) {
+    string hundreds[] = {"", "C", "CC", "CCC", "CD",
+                         "D", "DC", "DCC", "DCCC", "CM"};
+    return hundreds[(number % 1000) / 100];
+}
+
+string getTens(int number) {
+    string tens[] = {"", "X", "XX", "XXX", "XL",
+                     "L", "LX", "LXX", "LXXX", "XC"};
+    return tens[(number % 100) / 10];
+}
+
+string getOnes(int number) {
+    string ones[] = {"", "I", "II", "III", "IV",
+                     "V", "VI", "VII", "VIII", "IX"};
+    return ones[number % 10];
+}
+____________________________________________________________________________________
 
