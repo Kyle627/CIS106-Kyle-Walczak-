@@ -125,6 +125,92 @@ int main() {
     return 0;
 }
 _____________________________________________________________________________________________
+#include <iostream>
+#include <cctype>
+#include <string>
+using namespace std;
 
+int ToDigit(char &digit);
+int ReadDials(char &d1, char &d2, char &d3, char &d4, char &d5,
+              char &d6, char &d7, char &d8);
+void AcknowledgeCall(char d1, char d2, char d3, char d4, char d5,
+                     char d6, char d7, char d8);
 
+int main() {
+    char d1, d2, d3, d4, d5, d6, d7, d8;
+    int errorCode;
+
+    while (true) {
+        errorCode = ReadDials(d1, d2, d3, d4, d5,
+                              d6, d7, d8);
+
+        if (errorCode == -5) {
+            break;
+        } else if (errorCode == -1) {
+            cout << "ERROR - An invalid character was entered\n";
+        } else if (errorCode == -2) {
+            cout << "ERROR - Phone number cannot begin with 0\n";
+        } else if (errorCode == -3) {
+            cout << "ERROR - Phone number cannot begin with 555\n";
+        } else if (errorCode == -4) {
+            cout << "ERROR - Hyphen is not in the correct position\n";
+        } else {
+            AcknowledgeCall(d1, d2, d3, d4, d5, d6, d7, d8);
+        }
+    }
+    cout << "Press any key to continue . . .\n";
+    return 0;
+}
+
+int ToDigit(char &digit) {
+    digit = toupper(digit); // Convert to uppercase
+    switch (digit) {
+        case 'A': case 'B': case 'C': digit = '2'; return 0;
+        case 'D': case 'E': case 'F': digit = '3'; return 0;
+        case 'G': case 'H': case 'I': digit = '4'; return 0;
+        case 'J': case 'K': case 'L': digit = '5'; return 0;
+        case 'M': case 'N': case 'O': digit = '6'; return 0;
+        case 'P': case 'Q': case 'R': case 'S': digit = '7'; return 0;
+        case 'T': case 'U': case 'V': digit = '8'; return 0;
+        case 'W': case 'X': case 'Y': case 'Z': digit = '9'; return 0;
+        case '-': return 0;
+        default:
+            if (isdigit(digit)) return 0;
+            else return -1;
+    }
+}
+
+int ReadDials(char &d1, char &d2, char &d3, char &d4, char &d5,
+              char &d6, char &d7, char &d8) {
+    string input;
+    cout << "Enter a phone number (Q to quit): ";
+    getline(cin, input);
+
+    if (input == "Q" || input == "q") return -5;
+    if (input.length() != 8 || input[3] != '-') return -4;
+    if (input.substr(0, 3) == "555") return -3;
+    if (input[0] == '0') return -2;
+
+    d1 = input[0];
+    d2 = input[1];
+    d3 = input[2];
+    d4 = input[3];
+    d5 = input[4];
+    d6 = input[5];
+    d7 = input[6];
+    d8 = input[7];
+
+    if (ToDigit(d1) == -1 || ToDigit(d2) == -1 || ToDigit(d3) == -1 ||
+        ToDigit(d5) == -1 || ToDigit(d6) == -1 || ToDigit(d7) == -1 ||
+        ToDigit(d8) == -1) {
+        return -1;
+    }
+
+    return 0;
+}
+void AcknowledgeCall(char d1, char d2, char d3, char d4, char d5,
+                     char d6, char d7, char d8) {
+    cout << "Phone Number Dialed: " << d1 << d2 << d3 << d4 << d5 << d6 <<
+    d7 << d8 << endl;
+}
 
