@@ -25,7 +25,7 @@ int main() {
         isUnique = true;
     }
     
-    bubbleSort(vector<int>&numbers);
+    bubbleSort(numbers);
 
     cout << "The vector elements are: ";
     for (int num : numbers) {
@@ -39,7 +39,7 @@ void bubbleSort(vector<int>&numbers){
     for (int i = numbers.size() - 1; i > 0; i--)
         for (int j = 0; j < i; j++)
             if (numbers[j] > numbers[j + 1]){
-                int temp = numbers[j + 1];
+                int temp = numbers[j];
                 numbers[j] = numbers[j + 1];
                 numbers[j + 1] = temp; 
             }
