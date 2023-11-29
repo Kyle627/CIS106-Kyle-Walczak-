@@ -1,0 +1,34 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int value;
+    bool isUnique = true;
+    vector<int> numbers;
+
+    for (int i = 0; i < 5;) {
+        cout << "Enter an integer: ";
+        cin >> value;
+        for (int num : numbers) {
+            if (num == value) {
+                isUnique = false;
+                break;
+            }
+         }
+        if (isUnique && (value > 9 && value < 101)) {
+            numbers.push_back(value);
+            i++;
+        }
+        isUnique = true;
+    }
+// sort numbers before displaying
+
+    cout << "The vector elements are: ";
+    for (int num : numbers) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
