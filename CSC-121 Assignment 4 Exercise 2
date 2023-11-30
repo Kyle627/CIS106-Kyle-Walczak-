@@ -1,0 +1,22 @@
+// one-dimensional array
+// $200/week +9% of gross
+// i.e salesperson makes $5000
+// $200 std + 9%(5000) = $650
+// Create array of counters
+// Do logic for determining which array group each employee gets slotted into
+// Accept 20 employees
+
+#include <iostream>
+using namespace std; 
+
+int main(){
+    const int employees = 20;
+    int salaries[9] = {};
+    int gross;
+    
+    for (int i = 1; i <= employees; i++){
+        cout << "Enter gross pay for salesperson #"
+        << i<< endl;
+        cin >> gross;
+    }
+}
