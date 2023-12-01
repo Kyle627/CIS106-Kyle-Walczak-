@@ -43,7 +43,7 @@ using namespace std;
 
 
 int main(){
-    const int employees = 20;
+    const int employees = 5;
     int salaries[9] = {};
     float gross;
     int comission;
@@ -54,10 +54,11 @@ int main(){
         cin >> gross;
         cin.ignore();
         comission = gross * .05;
-        salaries[comission]++;
+        salaries[comission/100]++;
+        cout << salaries[comission] << comission << endl;
     }
-    for (auto element : salaries){
-        cout << "The number of salespeople earning in range " << 
-        element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
-    }
+    //for (auto element : salaries){
+    //    cout << "The number of salespeople earning in range " << 
+    //    element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
+    //}
 }
