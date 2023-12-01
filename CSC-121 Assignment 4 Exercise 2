@@ -1,10 +1,8 @@
-// check output statement
 #include <iostream>
 using namespace std; 
 
-
 int main(){
-    const int employees = 2;
+    const int employees = 20;
     int salaries[8] = {0};
     float gross;
     int comission;
