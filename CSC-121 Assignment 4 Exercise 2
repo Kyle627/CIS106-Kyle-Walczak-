@@ -27,15 +27,15 @@ Enter gross sales for salesperson #18: 8084
 Enter gross sales for salesperson #19: 7673.54
 Enter gross sales for salesperson #20: 3149
 
-Count of employees in each salary range:                    $2000 in sales = $100 in comission
-0The number of salespeople earning in range $200 - 299: 2 ( also means earning $0-$99 in comission)
-1The number of salespeople earning in range $300 - 399: 2 ( $100-$199 comission )
-2The number of salespeople earning in range $400 - 499: 5 ( $200-$299)
-3The number of salespeople earning in range $500 - 599: 0
-4The number of salespeople earning in range $600 - 699: 0
-5The number of salespeople earning in range $700 - 799: 1
-6The number of salespeople earning in range $800 - 899: 2
-7The number of salespeople earning in range $900 - 999: 6
+Count of employees in each salary range:                    
+0The number of salespeople earning in range $200 - 299: 2 $0-1100
+1The number of salespeople earning in range $300 - 399: 2 $1101-2200
+2The number of salespeople earning in range $400 - 499: 5 $2201-3300         
+3The number of salespeople earning in range $500 - 599: 0 $3301-4400                     
+4The number of salespeople earning in range $600 - 699: 0 $4401-5500              
+5The number of salespeople earning in range $700 - 799: 1 $5501-6600  
+6The number of salespeople earning in range $800 - 899: 2 $6601-7700  
+7The number of salespeople earning in range $900 - 999: 6 $7700-&
 8The number of salespeople earning in range $1000 and over: 2
                                                             */
 #include <iostream>
@@ -43,8 +43,8 @@ using namespace std;
 
 
 int main(){
-    const int employees = 5;
-    int salaries[9] = {};
+    const int employees = 1;
+    int salaries[9] = {0};
     float gross;
     int comission;
     
@@ -53,12 +53,13 @@ int main(){
         << i<< endl;
         cin >> gross;
         cin.ignore();
-        comission = gross * .05;
-        salaries[comission/100]++;
-        cout << salaries[comission] << comission << endl;
+        comission = gross * .09;
+        comission = comission / 100;
+        salaries[comission]++;
+        cout << salaries[comission] << endl;
     }
-    //for (auto element : salaries){
-    //    cout << "The number of salespeople earning in range " << 
-    //    element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
-    //}
+    for (auto element : salaries){
+        cout << "The number of salespeople earning in range " << 
+        element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
+    }
 }
