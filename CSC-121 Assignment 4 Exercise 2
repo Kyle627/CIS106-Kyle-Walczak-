@@ -3,9 +3,42 @@
 // i.e salesperson makes $5000
 // $200 std + 9%(5000) = $650
 // Create array of counters
-// Do logic for determining which array group each employee gets slotted into
+/// Do logic for determining which array group each employee gets slotted into
 // Accept 20 employees
+/*
+Enter gross sales for salesperson #1: 1000.82
+Enter gross sales for salesperson #2: 2342
+Enter gross sales for salesperson #3: 2238.32
+Enter gross sales for salesperson #4: 1230
+Enter gross sales for salesperson #5: 8453
+Enter gross sales for salesperson #6: 7238
+Enter gross sales for salesperson #7: 8991
+Enter gross sales for salesperson #8: 131
+Enter gross sales for salesperson #9: 2831.47
+Enter gross sales for salesperson #10: 7932
+Enter gross sales for salesperson #11: 2238
+Enter gross sales for salesperson #12: 8927
+Enter gross sales for salesperson #13: 8278
+Enter gross sales for salesperson #14: 7839.12
+Enter gross sales for salesperson #15: 7789
+Enter gross sales for salesperson #16: 2072
+Enter gross sales for salesperson #17: 5890
+Enter gross sales for salesperson #18: 8084
+Enter gross sales for salesperson #19: 7673.54
+Enter gross sales for salesperson #20: 3149
 
+Count of employees in each salary range:                    $2000 in sales = $100 in comission
+0The number of salespeople earning in range $200 - 299: 2 ( also means earning $0-$99 in comission)
+1The number of salespeople earning in range $300 - 399: 2 ( $100-$199 comission )
+2The number of salespeople earning in range $400 - 499: 5 ( $200-$299)
+3The number of salespeople earning in range $500 - 599: 0
+4The number of salespeople earning in range $600 - 699: 0
+5The number of salespeople earning in range $700 - 799: 1
+6The number of salespeople earning in range $800 - 899: 2
+7The number of salespeople earning in range $900 - 999: 6
+8The number of salespeople earning in range $1000 and over: 2
+                                                            */
+                                                            
 #include <iostream>
 using namespace std; 
 
@@ -13,10 +46,17 @@ int main(){
     const int employees = 20;
     int salaries[9] = {};
     int gross;
+    int comission;
     
     for (int i = 1; i <= employees; i++){
         cout << "Enter gross pay for salesperson #"
         << i<< endl;
         cin >> gross;
+        comission = gross * .05;
+        salaries[comission]++;
+    }
+    for (auto element : salaries){
+        cout << "The number of salespeople earning in range " << 
+        element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
     }
 }
