@@ -1,59 +1,26 @@
-// fix output statement 
-// Accept 20 employees
-/*
-Enter gross sales for salesperson #1: 1000.82
-Enter gross sales for salesperson #2: 2342
-Enter gross sales for salesperson #3: 2238.32
-Enter gross sales for salesperson #4: 1230
-Enter gross sales for salesperson #5: 8453
-Enter gross sales for salesperson #6: 7238
-Enter gross sales for salesperson #7: 8991
-Enter gross sales for salesperson #8: 131
-Enter gross sales for salesperson #9: 2831.47
-Enter gross sales for salesperson #10: 7932
-Enter gross sales for salesperson #11: 2238
-Enter gross sales for salesperson #12: 8927
-Enter gross sales for salesperson #13: 8278
-Enter gross sales for salesperson #14: 7839.12
-Enter gross sales for salesperson #15: 7789
-Enter gross sales for salesperson #16: 2072
-Enter gross sales for salesperson #17: 5890
-Enter gross sales for salesperson #18: 8084
-Enter gross sales for salesperson #19: 7673.54
-Enter gross sales for salesperson #20: 3149
-
-Count of employees in each salary range:                    
-0The number of salespeople earning in range $200 - 299: 2 $0-1100
-1The number of salespeople earning in range $300 - 399: 2 $1101-2200
-2The number of salespeople earning in range $400 - 499: 5 $2201-3300         
-3The number of salespeople earning in range $500 - 599: 0 $3301-4400                     
-4The number of salespeople earning in range $600 - 699: 0 $4401-5500              
-5The number of salespeople earning in range $700 - 799: 1 $5501-6600  
-6The number of salespeople earning in range $800 - 899: 2 $6601-7700  
-7The number of salespeople earning in range $900 - 999: 6 $7701-8800
-8The number of salespeople earning in range $1000 and over: $88-1-&
-                                                            */
+// check output statement
 #include <iostream>
 using namespace std; 
 
 
 int main(){
-    const int employees = 1;
-    int salaries[9] = {0};
+    const int employees = 2;
+    int salaries[8] = {0};
     float gross;
     int comission;
     
     for (int i = 0; i < employees; i++){
         cout << "Enter gross pay for salesperson #"
-        << i + 1 << endl;
+        << i + 1 << ": ";
         cin >> gross;
         cin.ignore();
-        comission = gross * .09;
-        comission = comission / 100;
+        gross = gross * .09;
+        comission = gross / 100;
         salaries[comission]++;
     }
-    for (int i = 0; i < 9; i++){
-        cout << "The number of salespeople earning in range " << 
-        (i + 1) * 200 << " - " << ((i + 3) * 100) - 1 << ": " << salaries[i] << endl;
+    for (int i = 1; i < 9; i++){
+        cout << "The number of salespeople earning in range $" << 
+        ((i - 1) * 100) + 200 << " - " << ((i * 100) + 200) - 1 << ": " << salaries[i - 1] << endl;
     }
+    cout << "The number of salespeople earning in range $1000 and more " << salaries[8] << endl; 
 }
