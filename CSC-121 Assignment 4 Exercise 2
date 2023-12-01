@@ -38,20 +38,21 @@ Count of employees in each salary range:                    $2000 in sales = $10
 7The number of salespeople earning in range $900 - 999: 6
 8The number of salespeople earning in range $1000 and over: 2
                                                             */
-                                                            
 #include <iostream>
 using namespace std; 
+
 
 int main(){
     const int employees = 20;
     int salaries[9] = {};
-    int gross;
+    float gross;
     int comission;
     
     for (int i = 1; i <= employees; i++){
         cout << "Enter gross pay for salesperson #"
         << i<< endl;
         cin >> gross;
+        cin.ignore();
         comission = gross * .05;
         salaries[comission]++;
     }
