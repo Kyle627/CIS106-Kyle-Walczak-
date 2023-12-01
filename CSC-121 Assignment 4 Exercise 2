@@ -1,9 +1,4 @@
-// one-dimensional array
-// $200/week +9% of gross
-// i.e salesperson makes $5000
-// $200 std + 9%(5000) = $650
-// Create array of counters
-/// Do logic for determining which array group each employee gets slotted into
+// fix output statement 
 // Accept 20 employees
 /*
 Enter gross sales for salesperson #1: 1000.82
@@ -35,8 +30,8 @@ Count of employees in each salary range:
 4The number of salespeople earning in range $600 - 699: 0 $4401-5500              
 5The number of salespeople earning in range $700 - 799: 1 $5501-6600  
 6The number of salespeople earning in range $800 - 899: 2 $6601-7700  
-7The number of salespeople earning in range $900 - 999: 6 $7700-&
-8The number of salespeople earning in range $1000 and over: 2
+7The number of salespeople earning in range $900 - 999: 6 $7701-8800
+8The number of salespeople earning in range $1000 and over: $88-1-&
                                                             */
 #include <iostream>
 using namespace std; 
@@ -48,18 +43,17 @@ int main(){
     float gross;
     int comission;
     
-    for (int i = 1; i <= employees; i++){
+    for (int i = 0; i < employees; i++){
         cout << "Enter gross pay for salesperson #"
-        << i<< endl;
+        << i + 1 << endl;
         cin >> gross;
         cin.ignore();
         comission = gross * .09;
         comission = comission / 100;
         salaries[comission]++;
-        cout << salaries[comission] << endl;
     }
-    for (auto element : salaries){
+    for (int i = 0; i < 9; i++){
         cout << "The number of salespeople earning in range " << 
-        element + 200 << " - " << element + 299 << ": " << salaries[element] << endl;
+        (i + 1) * 200 << " - " << ((i + 3) * 100) - 1 << ": " << salaries[i] << endl;
     }
 }
