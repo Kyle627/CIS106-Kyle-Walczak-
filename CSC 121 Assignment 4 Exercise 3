@@ -50,6 +50,11 @@ Employee(string firstName, sting lastName, char gender, int dependants, Benefit 
     
 }
 
+double calculatePay(double salary){
+    int weeklyPay = salary / 52
+    return weeklyPay
+}
+
 void displayEmployee(){
     cout << "First Name: " << firstName << endl;
     cout << "Last Name: " << lastName << endl;
@@ -57,6 +62,7 @@ void displayEmployee(){
     cout << "Number of dependants" << dependants << endl; 
     cout << "Salary: " << salary << endl; 
     cout << "benefit: " << benefit << endl; 
+    cout << "Weekly Pay: " << weeklyPay << endl; 
 }
 
 int main(){
