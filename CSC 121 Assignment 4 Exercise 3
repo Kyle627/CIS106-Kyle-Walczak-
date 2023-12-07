@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std; 
+
+class Benefit
+{
+private:
+    string healthInsurance;
+    double lifeInsurance;
+    int vacation;
+public:
+    Benefit();
+    string Benefit(string health, double lifeInsurance, int vacation);
+    void displayBenefit();
+};
+
+Benefit(){
+    // constructor 
+}
+
+Benefit(string health, double lifeInsurance, int vacation){
+    healthInsurance = premium; 
+    lifeInsurance = 400,000;
+    vacation = 14;
+}
+
+void displayBenefit(){
+    cout << "" << endl; 
+}
+
+class Employee
+{
+private: 
+    string firstName;
+    sting lastName;
+    char gender; 
+    int dependants;
+    double salary; 
+    Benefit benefit;
+public: 
+    Employee();
+    Employee(string firstName, sting lastName, char gender, int dependants, Benefit benefit);
+    void displayEmployee(); 
+};
+
+Employee(){
+    // constuctor
+}
+
+Employee(string firstName, sting lastName, char gender, int dependants, Benefit benefit){
+    
+}
+
+void displayEmployee(){
+    cout << "First Name: " << firstName << endl;
+    cout << "Last Name: " << lastName << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Number of dependants" << dependants << endl; 
+    cout << "Salary: " << salary << endl; 
+    cout << "benefit: " << benefit << endl; 
+}
+
+int main(){
+    return 0;
+}
